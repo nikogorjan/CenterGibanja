@@ -1,0 +1,144 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+.loading-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(34,34,34);
+  color: white;
+  display: flex;
+justify-content: center;
+align-items: center;
+animation: slideUp 1s forwards;
+animation-delay: 1s;
+
+
+}
+
+.background{
+
+  background-color: black;
+}
+
+
+
+
+
+@keyframes slideUp {
+  100% {
+    transform: translateY(100%);
+  }
+  0% {
+    transform: translateY(0);
+  }
+  
+}
+
+.loading-page h1 {
+  font-size: 24px;
+  font-family: 'Source Sans Pro';
+  /* Add more styles as needed */
+}
+
+
+@keyframes loadingAnimation {
+  
+  0% {
+      background-image: url('../../../assets/images/animation/01.png');
+    }
+    6% {
+      background-image: url('../../../assets/images/animation/02.png');
+      }
+      12% {
+        background-image: url('../../../assets/images/animation/03.png');
+      }
+      18% {
+        background-image: url('../../../assets/images/animation/04.png');
+      }
+      24% {
+        background-image: url('../../../assets/images/animation/05.png');
+      }
+      30% {
+        background-image: url('../../../assets/images/animation/06.png');
+      }
+      36% {
+        background-image: url('../../../assets/images/animation/07.png');
+      }
+      42% {
+        background-image: url('../../../assets/images/animation/08.png');
+      }
+      48% {
+        background-image: url('../../../assets/images/animation/09.png');
+      }
+      54% {
+        background-image: url('../../../assets/images/animation/010.png');
+      }
+      60% {
+        background-image: url('../../../assets/images/animation/011.png');
+      }
+      66% {
+        background-image: url('../../../assets/images/animation/012.png');
+      }
+      72% {
+        background-image: url('../../../assets/images/animation/013.png');
+      }
+      78% {
+        background-image: url('../../../assets/images/animation/014.png');
+      }
+      84% {
+        
+        background-image: url('../../../assets/images/animation/015.png');
+      }
+      93% {
+        background-image: url('../../../assets/images/animation/016.png');
+      }
+      
+    /* Add more keyframes for each frame of the animation */
+    100% {
+      background-image: url('../../../assets/images/animation/017.png');
+    }
+  
+}
+
+
+.loading-animation {
+  width: 100px;
+  height: 100px;
+  animation: loadingAnimation 2s infinite; /* Adjust the animation duration as needed */
+  background-repeat: no-repeat;
+  animation-fill-mode: linear forwards;
+  
+}
+
+.loading-bar {
+  
+  height: 1px;
+  background-color: white;
+  animation: fill-bar 1s linear;
+  
+width: 0;
+}
+
+@keyframes fill-bar {
+  0% {
+    width: 0%; /* Fill 1/3 of the bar */
+  }
+  33.33% {
+    width: 33.33%; /* Pause for half a second */
+  }
+  100% {
+    width: 100%; /* Fill the rest of the bar */
+  }
+}
