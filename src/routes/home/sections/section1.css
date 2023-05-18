@@ -59,7 +59,7 @@
     background-color: white;
     border-radius: 0;
     transition: transform 0.3s ease;
-    color: rgb(34,34,34);
+    color: rgb(23, 23, 23);
 
     
   }
@@ -88,7 +88,7 @@
 
   .button2:hover {
     transform: translateY(-8px);
-    color: rgb(34,34,34);
+    color: rgb(23, 23, 23);
     background-color: white;
   }
   
@@ -99,12 +99,16 @@
 
   
 
-@media (max-width: 750px) {
+@media (max-width: 600px) {
   .textPositionInner{
     justify-content: center; /* Center horizontally */
   align-items: center; 
   text-align: center;
   left: 0%;
+  }
+
+  .button2{
+    margin-left: 0px;
   }
 
   .hook {
@@ -114,9 +118,7 @@
     font-weight: bold;
 }
 
-.button2{
-  margin-left: 0px;
-}
+
 
 .buttons{
   flex-direction: column;
@@ -188,4 +190,73 @@
     overflow: hidden;
     }
   
-  
+    @media screen and (orientation: landscape) and (max-width: 960px) {
+      .textPosition{
+        justify-content: center; /* Center horizontally */
+      align-items: center; 
+      text-align: center;
+      left: 0%;
+      }
+
+      .textPositionInner {
+        position: relative;
+        top: 0%;
+        left: 0%;
+        
+      }
+
+      .button1{
+        
+      }
+
+      .button2{
+        
+        margin-left: 20px;
+      }
+    } 
+
+    @media (max-width: 280px) {
+      .textPosition{
+        justify-content: center; /* Center horizontally */
+      align-items: center; 
+      text-align: center;
+      left: 0%;
+      }
+
+      .textPositionInner {
+        position: relative;
+        top: 0%;
+        left: 0%;
+
+      }
+      .button1{
+       width: 200px;
+       height: 75px; 
+      }
+
+      .button2{
+        width: 200px;
+        height: 75px; 
+       
+       }
+
+       .text1{
+        margin: 1px;
+       }
+    }
+
+
+    @media (max-height: 400px) {
+      .button2{
+        margin-left: 0px;
+       
+       }
+    }
+
+
+    @media (max-width: 688px) {
+      .button2{
+        margin-left: 0px;
+       
+       }
+    }
