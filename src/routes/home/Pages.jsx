@@ -6,6 +6,7 @@ import Navbar from "./navbar/navbar";
 import SimpleBar from "simplebar-react";
 import "simplebar/dist/simplebar.min.css";
 import LoadingPage from "./loadingPage/loadingPage";
+import Section2 from "./sections/Section2";
 
 const Pages = () => {
   const [text, setText] = useState("");
@@ -49,7 +50,7 @@ const Pages = () => {
         >
           <Navbar />
           <Section1 className="fade-in" />
-
+          <Section2 />
           <div className="Scroll">Third Page</div>
           <div className="Scroll">Fourth Page</div>
         </div>
