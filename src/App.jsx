@@ -12,13 +12,16 @@ import Admin from "./routes/admin/admin";
 import Dashboard from "./routes/dashboard/dashboard";
 import PrivateRoutes from "./utils/privateRoutes";
 import { AuthProvider } from "./utils/authContext";
+import Ponudba from "./routes/ponudba/ponudba";
+import Kontakt from "./routes/kontakt/kontakt";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<Pages />} />
-
       <Route path="/admin" element={<Admin />} />
+      <Route path="/ponudba" element={<Ponudba />} />
+      <Route path="/kontakt" element={<Kontakt />} />
 
       <Route element={<PrivateRoutes />}>
         <Route path="/dashboard" element={<Dashboard />} />

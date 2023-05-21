@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.kontakt-main{
+    background-color: rgb(23, 23, 23);
+    height: 100vh;
+}
+
+.scrollable {
+  background-color: rgb(23, 23, 23);
+}
+
+.kontakt-grid{
+  background-color: rgb(23, 23, 23);
+
+}
+
+.kontakt-grid{
+  position: absolute;
+  left: 8%;
+  top: 14%;
+  display: flex;
+  flex-direction: row;
+}
+
+.kontakt-podatki{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.kontakt-naslov{
+    font-family: 'Source Sans Pro Bold';
+    color:white;
+    font-size: clamp(32px, 5vw, 82px);
+}
+
+.kontakt-telefon{
+  margin-top: 25%;
+  margin-bottom: 25%;
+
+}
+
+.telefon-white{
+    color: white;
+    font-family: 'Source Sans Pro Bold';
+    font-size: clamp(16px, 5vw, 42px);
+
+}
+
+.telefon-gray{
+    font-family: 'Source Sans Pro Bold';
+    font-size: clamp(14px, 5vw, 36px);
+    color: rgb(136, 136, 136);
+    cursor: pointer;
+}
+
+.telefon-gray:hover{
+  color: white;
+}
+
+.kontakt-telefon{
+    margin-bottom: 15%;
+}
+
+@keyframes fade-in2 {
+  0% {
+    background-color: black; /* or any other dark color */
+    opacity: 1;
+  }
+  100% {
+    background-color: transparent; /* or the desired background color */
+    opacity: 1;
+    z-index: 0;
+
+  }
+}
+
+
+
+.kontakt-animation{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  animation: fade-in2 2s forwards;
+
+}
+
+.kontakt-image{
+  
+}
+
+.kontakt-image1{
+  margin-top: 100px;
+  margin-left: 300px;
+  width: 50%;
+}
+
+@media (max-width: 1071px) {
+  .kontakt-image1{
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 896px) {
+  .kontakt-grid{   
+    flex-direction: column;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .kontakt-image1{
+    margin-top: 0px;
+    margin-left: 0px;
+    width: 100%;
+  }
+
+  .kontakt-podatki{
+    margin-top: 50px;
+  }
+
+  .telefon-gray{
+    font-size: 14px;
+  }
+
+  .kontakt-telefon{
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  .kontakt-naslov{
+    margin-bottom: 0px;
+  }
+
+  #naslov{
+    margin-bottom: 30px;
+  }
+}
+
+
+@keyframes move-up2 {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  }
+
+  #naslov{
+    animation: move-up2 2s forwards;
+
+  }
+
+  .kontakt-naslov-slider{
+    overflow: hidden;
+
+  }
+
+  .telefon-white{
+    animation: move-up2 2s forwards;
+
+  }
+
+  .telefon-white-slider{
+    overflow: hidden;
+
+  }
+
+  .telefon-gray{
+    animation: move-up2 2s forwards;
+
+  }
+
+  .telefon-gray-slider{
+    overflow: hidden;
+
+  }
