@@ -19,7 +19,7 @@ const Section1 = () => {
 
   return (
     <div
-      className="Scroll"
+      className="Scroll fade-in"
       id="bg1"
       style={{
         backgroundImage: "url('src/routes/home/sections/slika1.jpg')",
