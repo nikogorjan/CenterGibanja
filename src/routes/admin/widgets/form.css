@@ -17,12 +17,12 @@
     transform: translate(-50%, -50%);
     height: 100vh;
     width: 100%;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(23, 23, 23);
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Source Sans Pro';
-    color: rgb(34, 34, 34);
+    color: rgb(23, 23, 23);
 
   }
 
@@ -65,7 +65,7 @@ h1 {
   button {
     padding: 8px 16px;
     border-radius: 4px;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(23, 23, 23);
     color: #fff;
     border: none;
     cursor: pointer;

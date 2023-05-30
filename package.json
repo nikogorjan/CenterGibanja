@@ -11,10 +11,15 @@
   },
   "dependencies": {
     "axios": "^1.4.0",
+    "buffer": "^6.0.3",
+    "buffer-es": "^1.0.0",
+    "framer-motion": "^10.12.16",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "simplebar": "^6.2.5",
-    "simplebar-react": "^3.2.4"
+    "simplebar-react": "^3.2.4",
+    "swiper": "^9.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",

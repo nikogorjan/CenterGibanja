@@ -260,3 +260,28 @@
        
        }
     }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 0%;
+      background-color: black; /* Black color with opacity */
+      z-index: 9999; /* Ensure the overlay appears on top of other content */
+
+    }
+
+    .overlay.drop{
+      animation: overlay-animation 1s forwards;
+
+    }
+    
+    @keyframes overlay-animation {
+      0% {
+        height: 0%;
+      }
+      100% {
+        height: 100%;
+      }
+    }

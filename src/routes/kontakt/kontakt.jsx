@@ -65,7 +65,6 @@ const Kontakt = () => {
   return (
     <div className="kontakt-main">
       <div className="kontakt-animation"></div>
-
       <Navbar />
       {isMobile ? (
         <div className="kontakt-grid">

@@ -2,9 +2,12 @@ import React, { useEffect, useState } from "react";
 import "../sections/section1.css";
 import Axios from "axios";
 import image from "../sections/slika1.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Section1 = () => {
   const [text, setText] = useState("");
+  const navigate = useNavigate();
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
   useEffect(() => {
     // Make the API call to retrieve the text from the server
@@ -16,6 +19,22 @@ const Section1 = () => {
         console.error(error);
       });
   }, []);
+
+  const handleKontaktClick = () => {
+    setIsOverlayVisible(true);
+
+    setTimeout(() => {
+      navigate("/kontakt");
+    }, 1000);
+  };
+
+  const handlePonudbaClick = () => {
+    setIsOverlayVisible(true);
+
+    setTimeout(() => {
+      navigate("/ponudba");
+    }, 1000);
+  };
 
   return (
     <div
@@ -43,16 +62,17 @@ const Section1 = () => {
           </div>
           <div className="buttonsSlider">
             <div className="buttons">
-              <button className="button1">
+              <button className="button1" onClick={handlePonudbaClick}>
                 <p className="buttonText1">PONUDBA</p>
               </button>
-              <button className="button2">
+              <button className="button2" onClick={handleKontaktClick}>
                 <p className="buttonText1">KONTAKT</p>
               </button>
             </div>
           </div>
         </div>
       </div>
+      {isOverlayVisible && <div className="overlay drop"></div>}
     </div>
   );
 };

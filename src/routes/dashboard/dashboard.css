@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.dashboard-main{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(23, 23, 23);
+}
+
+.ponudba-content{
+    width: 1080px;
+    height: 800px;
+    background-color: rgb(20, 131, 235,0.1);
+    border: 0.5px solid rgb(20, 131, 235); 
+    border-radius: 6px;
+    color: white;
+    padding: 50px;
+    overflow: auto;
+}
+
+.ponudba-header{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: 32px;
+}
+
+.add-button-div{
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.add-button{
+  align-self: flex-end;
+  height: 40px;
+  width: 131px;
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 6px;
+  background-color: rgb(20, 131, 235,0.1);
+}
+
+.add-button:hover{
+  background-color: rgb(20, 131, 235); 
+}
+
+.ponudba-items{
+}
+
+.widget-image{
+  width: 120px;
+  height: 120px;
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 6px;
+}
+
+.widget{
+  height: 140px;
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 6px;
+  margin-top: 30px;
+  padding: 10px;
+}
+
+.widget-row{
+  display: flex;
+}
+
+.widget-paragraphs{
+  margin-left: 10px;
+  font-family: 'Source Sans Pro';
+}
+
+.paragraph-container{
+  width: 330px;
+  height: 30px;
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 4px;
+  margin-bottom: 10px;
+}
+
+.other-data{
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 6px;
+  width: 440px;
+  margin-left: 10px;
+  padding: 10px;
+  font-family: 'Source Sans Pro';
+  overflow: auto;
+  font-size: 12px;
+}
+
+.popup-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 800px;
+  height: 700px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding: 20px;
+}
+
+.close-button{
+  width: 100px;
+  height: 40px;
+}
+
+.image-container {
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.input-text{
+  padding-bottom: 10px;
+}
+
+.para{
+  font-family: 'Source Sans Pro';
+
+}
+
+.input-row{
+  display: flex;
+  flex-direction: row;
+}
+
+.input-row-field{
+  width: 250px;
+  height: 33px;
+}
+
+.input-row{
+  margin-bottom: 0px;
+}
+
+.button-row-yes{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.add-button-form{
+  width: 100px;
+  margin-right: 10px;
+}
