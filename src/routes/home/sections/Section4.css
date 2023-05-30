@@ -1,0 +1,282 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+  .sekcija4-postavitev{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 15%;
+    left: 0%;
+    width: 100%;
+}
+
+#sec4{
+    align-items: flex-start;
+    overflow: hidden;
+    background-color: rgb(23, 23, 23);
+}
+
+.image-section4{
+    width: 90%;
+    height: auto;
+}
+
+.sekcija4-naslov{
+    color: white;
+    font-family: 'Source Sans Pro Bold';
+    font-size: clamp(24px, 4vw, 72px);;
+
+}
+
+
+  
+  .image-section4 {
+    
+    
+    animation: zoomAnimation 20s linear infinite;
+  }
+  
+  @keyframes zoomAnimation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .besedilo4{
+    margin-top: 0px;
+    font-size: clamp(9px, 2vw, 24px);
+    font-family: 'Source Sans Pro';
+    color: white;
+  }
+
+
+  .section4-button{
+    width: 300px;
+    height: 75px;
+    margin-top: 50px;
+    border-radius: 0px;
+    font-size: 16px;
+    background-color: white;
+    color: rgb(23, 23, 23);
+    transition: transform 0.3s ease;
+    font-family: 'Source Sans Pro Bold';
+}
+
+.section4-button:hover{
+    transform: translateY(-8px);
+    color: white;
+    background-color: rgb(20, 131, 235); 
+}
+
+.postavitev-text4{
+    margin-left: 50px;
+}
+
+.sekcija4-socials{
+    display: flex;
+    flex-direction: row;
+}
+
+.instagram-icon-img4 {
+    width: 35px;
+    height: 35px;
+    margin-left: 15px;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+  }
+  
+  
+  .facebook-icon-img4 {
+    width: 35px;
+    height: 35px;
+    
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+
+  }
+
+  .facebook-icon-img4:hover{
+    filter: brightness(0) invert(1);
+    
+
+  }
+
+  .instagram-icon-img4:hover {
+    filter: brightness(0) invert(1);
+
+
+  }
+
+  .sekcija4-socials{
+    margin-top: 300px;
+  }
+
+  .email4{
+    margin-top: 10px;
+    color: rgb(136, 136, 136);
+    font-size: clamp(9px, 2vw, 24px);
+    font-family: 'Source Sans Pro Bold';
+    cursor: pointer;
+  }
+
+  .email4:hover{
+    color: white;
+  }
+
+  @media (max-width: 1300px) {
+    .postavitev-text4{
+        margin-left: 0px;
+    }
+  }
+
+  @media (max-width: 1025px) {
+    .postavitev-text4{
+        margin-left: 20px;
+    }
+
+    .image-section4{
+        width: 90%;
+        height: auto;
+    }
+
+    .postavitev-slika4{
+        width: 500px;
+    }
+
+    .sekcija4-socials{
+        margin-top: 100px;
+      }
+  }
+
+  @media (max-width: 718px) and (max-height: 518px)  {
+    .section4-button{
+        width: 200px;
+        height: 50px;
+        margin-top: 50px;
+        border-radius: 0px;
+        font-size: 16px;
+        background-color: white;
+        color: rgb(23, 23, 23);
+        transition: transform 0.3s ease;
+        font-family: 'Source Sans Pro Bold';
+    }
+
+    .postavitev-text4{
+        margin-left: 0px;
+    }
+    
+  }
+
+  @media (max-width: 821px) and (min-height: 519px)  {
+    .sekcija4-postavitev{
+        flex-direction: column;
+        align-items: center;
+        
+    position: relative;
+    top: 10%;
+    left: 0%;
+    width: 90%;
+    }
+
+    .image-section4{
+        width: 100%;
+    }
+
+    .postavitev-slika4{
+        width: 600px;
+    }
+
+    .postavitev-text4{
+        margin-top: 40px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .sekcija4-socials{
+        align-items: center;
+        text-align: center;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+    .sekcija4-naslov{
+        color: white;
+        font-family: 'Source Sans Pro Bold';
+        font-size: 42px;
+    
+    }
+  }
+
+  @media (max-width: 600px) and (min-height: 519px) {
+    .sekcija4-postavitev{
+        flex-direction: column;
+        align-items: center;
+        
+    position: relative;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+    }
+
+    .image-section4{
+        width: 60%;
+    }
+
+    .postavitev-slika4{
+        width: 600px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .postavitev-text4{
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .sekcija4-socials{
+        margin-top: 15px;
+        align-items: center;
+        text-align: center;
+        margin-left: 0%;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+    .sekcija4-naslov{
+        color: white;
+        font-family: 'Source Sans Pro Bold';
+        font-size: 42px;
+    
+    }
+
+    .section4-button{
+        width: 200px;
+        height: 50px;
+    }
+
+    .facebook-icon-img4{
+        
+    }
+  }

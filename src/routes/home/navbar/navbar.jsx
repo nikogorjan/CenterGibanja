@@ -17,7 +17,25 @@ const Navbar = () => {
   };
 
   const handlePonudbaClick = () => {
-    navigate("/ponudba");
+    if (window.location.pathname !== "/ponudba") {
+      const kontaktMenuItems = document.querySelectorAll(".menu-item.animate");
+      kontaktMenuItems.forEach((menuItem) =>
+        menuItem.classList.add("move-down")
+      );
+      const lokacijaItem = document.querySelector(".kontakt-lokacija");
+      lokacijaItem.classList.add("out");
+
+      setTimeout(() => {
+        const overlay = document.querySelector(".overlay");
+        overlay.classList.add("drop");
+      }, 200);
+
+      setTimeout(() => {
+        navigate("/ponudba");
+      }, 1000);
+    } else {
+      handleMenuToggle();
+    }
   };
 
   const handleDomovClick = () => {
