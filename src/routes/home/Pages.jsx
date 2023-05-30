@@ -55,8 +55,6 @@ const Pages = () => {
           <Section2 />
           <Section3 />
           <Section4 />
-          <div className="Scroll">Third Page</div>
-          <div className="Scroll">Fourth Page</div>
         </div>
       )}
     </div>
