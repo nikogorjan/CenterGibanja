@@ -4,6 +4,7 @@ import Navbar from "../home/navbar/navbar";
 import "../home/navbar/navbar.css";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import SwiperCarousel from "./swiper";
+import backgroundImage from "./Ponudba_Slika.jpg";
 
 const Ponudba = () => {
   const [width, setWidth] = useState(0);
