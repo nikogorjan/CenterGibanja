@@ -82,7 +82,7 @@
     opacity: 1;
     z-index: 0;
 
-  }
+  } 
 }
 
 
@@ -194,4 +194,48 @@
   .telefon-gray-slider{
     overflow: hidden;
 
+  }
+
+
+  @media screen and (min-width: 1921px){
+    .kontakt-grid{   
+      flex-direction: row;
+      position: absolute;
+      left: 0%;
+      top: 20%;
+      
+      padding: 20px;
+    }
+  
+    .kontakt-image1{
+      margin-top: 0px;
+      margin-left: 550px;
+      width: 70%;
+    }
+  
+    .kontakt-podatki{
+      margin-top: 120px;
+      margin-left: 200px;
+    }
+  
+    .telefon-gray{
+      font-size: 24px;
+    }
+  
+    .kontakt-telefon{
+      margin-top: 0px;
+      margin-bottom: 30px;
+    }
+  
+    .kontakt-naslov{
+      margin-bottom: 0px;
+    }
+  
+    #naslov{
+      margin-bottom: 30px;
+    }
+
+    .kontakt-telefon{
+      margin-top: 120px;
+    }
   }

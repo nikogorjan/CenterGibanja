@@ -280,3 +280,35 @@
         
     }
   }
+
+
+  @media screen and (min-width: 1921px){
+    .image-section4{
+      width: 110%;
+  }
+
+  .postavitev-text4{
+    margin-left: 400px;
+  }
+
+  .sekcija4-socials{
+    margin-top: 25px;
+    align-items: center;
+    text-align: center;
+    margin-left: 0%;
+    margin-top: 50%;
+    display: flex;
+justify-content: baseline;
+align-items: center;
+width: 300px;
+}
+
+.sekcija4-naslov{
+    color: white;
+    font-family: 'Source Sans Pro Bold';
+    font-size: 121px;
+
+}
+
+
+  }
