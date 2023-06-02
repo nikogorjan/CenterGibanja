@@ -1124,3 +1124,127 @@ z-index: 9999; /* Ensure a higher z-index value */
     top: 120px;
   }
 }
+
+
+@media screen and (min-width: 1921px){
+  .carousel-container{
+    height: 100vh;
+  }
+
+
+
+  .data-div{
+    
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    width: 930px;
+  }
+
+  .data-header{
+    font-size: 64px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+  
+  }
+  
+  .data-paragraph{
+    font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 16px;
+    font-size: 24px;
+  }
+  
+  .data-line{
+    border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .data-button{
+    z-index: 9999999;
+    width: 180px;
+    height: 50px;
+    margin-bottom: 12px;
+    margin-right: 12px;
+    border-radius: 0px;
+    background-color: rgb(23, 23, 23);
+    font-size: 13px;
+    cursor: pointer;
+   
+  }
+
+  .data-column{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 50px;
+    top: 550px;
+  }
+
+  .napis{
+    font-size: 12px;
+    font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+  }
+  
+  .cena{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+  }
+
+  .inner-carousel{
+    margin-left: 240px;
+  }
+
+  .image{
+    width: 1400px;
+    height: 640px;
+  }
+
+  .carousel{
+    top: 380px;
+  }
+
+  .carousel-button-left{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 340px;
+    left: 1860px;
+    cursor: pointer;
+  }
+  
+  .carousel-button-right{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    top: 340px;
+    left: 1940px;
+    cursor: pointer;
+  
+  }
+
+  .dot-indicators {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 1100px;
+    left: 1275px;
+  }
+
+  .data-button-container{
+    margin-top: 40px;
+  }
+
+  .inner-carousel{
+    margin-left: 540px;
+  }
+}

@@ -210,3 +210,22 @@
               }
               
     }
+
+
+
+    @media screen and (min-width: 1921px){
+      img{
+        width: 125%;
+        height: auto;
+      }
+      .slika1{
+        margin-right: 120px;
+      }
+      .napis_sekcija2{
+        margin-left: 200px;
+        width: 1000px;
+      }
+      .napis2{
+        font-size: 120px;
+      }
+    }  
