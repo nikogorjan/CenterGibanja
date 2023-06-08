@@ -1,0 +1,34 @@
+.spreadsheet {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .spreadsheet td {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px;
+  }
+  
+  .spreadsheet input {
+    border: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border-radius: 0;
+  }
+  
+  .spreadsheet td:first-child {
+    border-left: none;
+  }
+  
+  .spreadsheet td:last-child {
+    border-right: none;
+  }
+  
+  .spreadsheet tr:first-child td {
+    border-top: none;
+  }
+  
+  .spreadsheet tr:last-child td {
+    border-bottom: none;
+  }

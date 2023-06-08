@@ -134,6 +134,7 @@
 
 .input-text{
   padding-bottom: 10px;
+  border: none;
 }
 
 .para{
@@ -155,13 +156,15 @@
   margin-bottom: 0px;
 }
 
+
 .button-row-yes{
   margin-top: 20px;
   display: flex;
   flex-direction: row;
 }
-
+ 
 .add-button-form{
   width: 100px;
   margin-right: 10px;
 }
+

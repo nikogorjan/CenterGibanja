@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "../sections/Section3.css";
 import Axios from "axios";
 import { useNavigate } from "react-router-dom";
+import SlikaGym from "../sections/gym.jpg";
 
 const Section3 = () => {
   const sectionRef = useRef(null);
@@ -71,56 +72,56 @@ const Section3 = () => {
           <div className="box">
             <span style={{ "--i": "1" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "2" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "3" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "4" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "5" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "6" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "7" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />
             </span>
             <span style={{ "--i": "8" }}>
               <img
-                src="src/routes/home/sections/gym.jpg"
+                src={SlikaGym}
                 alt="Image description"
                 className="image-section3"
               />

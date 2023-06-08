@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../sections/Section2.css";
 import Axios from "axios";
+import Slika1 from "../sections/Section_2_01.jpg";
+import Slika2 from "../sections/Section_2_02.jpg";
 
 const Section2 = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -8,15 +10,21 @@ const Section2 = () => {
   const [animationTriggered, setAnimationTriggered] = useState(false);
 
   useEffect(() => {
+    const mediaQuery1 = window.matchMedia("(max-width: 850px)");
+    const mediaQuery2 = window.matchMedia("(min-height: 650px)");
+
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 850 && window.innerHeight > 650);
+      setIsMobile(mediaQuery1.matches && mediaQuery2.matches);
     };
 
-    window.addEventListener("resize", handleResize);
     handleResize();
 
+    mediaQuery1.addListener(handleResize);
+    mediaQuery2.addListener(handleResize);
+
     return () => {
-      window.removeEventListener("resize", handleResize);
+      mediaQuery1.removeListener(handleResize);
+      mediaQuery2.removeListener(handleResize);
     };
   }, []);
 
@@ -50,7 +58,7 @@ const Section2 = () => {
   }, []);
 
   return (
-    <div className="Scroll" id="bg1" ref={sectionRef}>
+    <div className="Scroll" ref={sectionRef}>
       <div className="textPosition2">
         {isMobile ? (
           <>
@@ -68,36 +76,20 @@ const Section2 = () => {
             </div>
             <div className="mobileimg">
               <div className="slika1">
-                <img
-                  src="src/routes/home/sections/Section_2_01.jpg"
-                  alt="Image description"
-                  className="image1"
-                />
+                <img src={Slika1} alt="Image description" className="image1" />
               </div>
               <div className="slika2">
-                <img
-                  src="src/routes/home/sections/Section_2_02.jpg"
-                  alt="Image description"
-                  className="image1"
-                />
+                <img src={Slika2} alt="Image description" className="image1" />
               </div>
             </div>
           </>
         ) : (
           <div className="textPositionInner2">
             <div className="slika1">
-              <img
-                src="src/routes/home/sections/Section_2_01.jpg"
-                alt="Image description"
-                className="image1"
-              />
+              <img src={Slika1} alt="Image description" className="image1" />
             </div>
             <div className="slika2">
-              <img
-                src="src/routes/home/sections/Section_2_02.jpg"
-                alt="Image description"
-                className="image1"
-              />
+              <img src={Slika2} alt="Image description" className="image1" />
             </div>
             <div className="napis_sekcija2">
               <div className="napis2slider">
