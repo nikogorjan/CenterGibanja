@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./dashboard.css";
 import { Buffer } from "buffer"; // Import buffer library
+import Spreadsheet from "./spreadsheet";
 
 const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
   const [mainTableData, setMainTableData] = useState([]);
@@ -206,126 +207,16 @@ const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
               onChange={handleTextField2Change}
             />
           </div>
-
-          <div className="input-row">
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField3Value}
-                onChange={handleTextField3Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField4Value}
-                onChange={handleTextField4Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField5Value}
-                onChange={handleTextField5Change}
-              />
-            </div>
+          <p className="para">Cena</p>
+          <div className="input-text">
+            <input
+              type="text"
+              value={textField3Value}
+              onChange={handleTextField3Change}
+            />
           </div>
 
-          <div className="input-row">
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField6Value}
-                onChange={handleTextField6Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField7Value}
-                onChange={handleTextField7Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField8Value}
-                onChange={handleTextField8Change}
-              />
-            </div>
-          </div>
-
-          <div className="input-row">
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField9Value}
-                onChange={handleTextField9Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField10Value}
-                onChange={handleTextField10Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField11Value}
-                onChange={handleTextField11Change}
-              />
-            </div>
-          </div>
-
-          <div className="input-row">
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField12Value}
-                onChange={handleTextField12Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField13Value}
-                onChange={handleTextField13Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField14Value}
-                onChange={handleTextField14Change}
-              />
-            </div>
-          </div>
-
-          <div className="input-row">
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField15Value}
-                onChange={handleTextField15Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField16Value}
-                onChange={handleTextField16Change}
-              />
-            </div>
-            <div className="input-row-field">
-              <input
-                type="text"
-                value={textField17Value}
-                onChange={handleTextField17Change}
-              />
-            </div>
-          </div>
+          <Spreadsheet />
 
           <div className="button-row-yes">
             <button className="add-button-form" onClick={handleAddFormSubmit}>

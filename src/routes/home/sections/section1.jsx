@@ -37,15 +37,7 @@ const Section1 = () => {
   };
 
   return (
-    <div
-      className="Scroll fade-in"
-      id="bg1"
-      style={{
-        backgroundImage: "url('src/routes/home/sections/slika1.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <div className="Scroll fade-in" id="bg1">
       <div className="textPosition">
         <div className="textPositionInner">
           <div className="hookSlider">

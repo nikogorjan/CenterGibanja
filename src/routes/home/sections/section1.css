@@ -10,11 +10,17 @@
     /* Add more src lines for different font file formats if needed */
   }
 
+  #bg1{
+    background-image: url("slika1.jpg");
+  background-size: cover;
+  background-position: center;
+  }
+
 
 .hook{
     color: white;
     font-family: 'Source Sans Pro Bold';
-    font-size: clamp(70px, 5vw, 121px);
+    font-size: clamp(70px, 6vw,144px);
     font-weight: bold;
     
     
@@ -47,7 +53,7 @@
 
 .textPositionInner {
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 8.5%;
     
   }
@@ -105,11 +111,17 @@
   align-items: center; 
   text-align: center;
   left: 0%;
+  top: 32%;
   }
+
+  
 
   .button2{
     margin-left: 0px;
+    margin-top: 20px;
   }
+
+
 
   .hook {
     color: white;
