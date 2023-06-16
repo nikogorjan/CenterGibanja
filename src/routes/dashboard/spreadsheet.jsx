@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./spreadsheet.css";
 
-const Spreadsheet = () => {
+const Spreadsheet = ({ onDataChange }) => {
   const [data, setData] = useState([
+    ["", "", ""],
     ["", "", ""],
     ["", "", ""],
     ["", "", ""],
@@ -12,6 +13,9 @@ const Spreadsheet = () => {
     const newData = [...data];
     newData[rowIndex][colIndex] = event.target.value;
     setData(newData);
+
+    // Call the onDataChange prop with the updated data
+    onDataChange(newData);
   };
 
   const handleAddRow = () => {
@@ -28,18 +32,28 @@ const Spreadsheet = () => {
             <tr key={rowIndex}>
               {row.map((cell, colIndex) => (
                 <td key={colIndex}>
-                  <input
-                    type="text"
-                    value={cell}
-                    onChange={(e) => handleChange(e, rowIndex, colIndex)}
-                  />
+                  {rowIndex === 0 ? (
+                    <p>
+                      {colIndex === 0
+                        ? "Ponudba"
+                        : colIndex === 1
+                        ? "Opis"
+                        : "Cena"}
+                    </p>
+                  ) : (
+                    <input
+                      type="text"
+                      value={cell}
+                      onChange={(e) => handleChange(e, rowIndex, colIndex)}
+                    />
+                  )}
                 </td>
               ))}
             </tr>
           ))}
         </tbody>
       </table>
-      <button onClick={handleAddRow}>Add Row</button>
+      <button className="button-click" onClick={handleAddRow}>Add Row</button>
     </div>
   );
 };

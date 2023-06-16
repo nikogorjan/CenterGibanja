@@ -23,9 +23,9 @@
 .ponudba-content{
     width: 1080px;
     height: 800px;
-    background-color: rgb(20, 131, 235,0.1);
-    border: 0.5px solid rgb(20, 131, 235); 
-    border-radius: 6px;
+    background-color: rgb(23, 23, 23);/*rgb(20, 131, 235,0.1);*/
+    border: 0.5px rgb(23, 23, 23);/*solid rgb(20, 131, 235); */
+    border-radius: 0px;
     color: white;
     padding: 50px;
     overflow: auto;
@@ -44,12 +44,20 @@
 }
 
 .add-button{
-  align-self: flex-end;
   height: 40px;
   width: 131px;
   border: 0.5px solid rgb(20, 131, 235); 
-  border-radius: 6px;
+  border-radius: 0px;
   background-color: rgb(20, 131, 235,0.1);
+  
+  
+}
+
+.header-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
 .add-button:hover{
@@ -63,13 +71,13 @@
   width: 120px;
   height: 120px;
   border: 0.5px solid rgb(20, 131, 235); 
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
 .widget{
   height: 140px;
   border: 0.5px solid rgb(20, 131, 235); 
-  border-radius: 6px;
+  border-radius: 0px;
   margin-top: 30px;
   padding: 10px;
 }
@@ -87,7 +95,7 @@
   width: 330px;
   height: 30px;
   border: 0.5px solid rgb(20, 131, 235); 
-  border-radius: 6px;
+  border-radius: 0px;
   font-size: 16px;
   padding: 4px;
   margin-bottom: 10px;
@@ -95,7 +103,7 @@
 
 .other-data{
   border: 0.5px solid rgb(20, 131, 235); 
-  border-radius: 6px;
+  border-radius: 0px;
   width: 440px;
   margin-left: 10px;
   padding: 10px;
@@ -112,7 +120,7 @@
   background-color: #ffffff;
   width: 800px;
   height: 700px;
-  border-radius: 6px;
+  border-radius: 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 999;
   padding: 20px;
@@ -168,3 +176,94 @@
   margin-right: 10px;
 }
 
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.popup-window {
+  position: fixed;
+  top: 50%;
+  width: 700px;
+  height: 100vh;
+  background-color: white;
+  transition: right 0.3s ease-in-out;
+}
+
+.popup-overlay.open {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-window.open {
+  right: 0;
+}
+
+.popup-button{
+  width: 100px;
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 0px;
+}
+
+.input-container {
+  
+  margin-bottom: 40px;
+}
+
+.popup-window .input-field {
+  border: none; 
+  outline: none;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0px;
+  margin-bottom: 20px;
+}
+
+.image-container{
+  width: 300px;
+  height: 300px;
+  border: 1px solid #ccc;
+  margin-bottom: 40px;
+}
+
+.image-container:hover{
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  fill: #ccc;
+  width: 32px; /* Adjust the width and height as needed */
+  height: 32px;
+}
+
+.add-form-button{
+  height: 40px;
+  width: 131px;
+  border: 0.5px solid rgb(20, 131, 235); 
+  border-radius: 0px;
+  background-color: rgb(20, 131, 235);
+  margin-right: 20px;
+  border-radius: 0px;
+}
+
+.add-form-button:hover{
+  background-color: rgb(23, 23, 23);;
+}
+
+label{
+  font-size: 12px;
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+}
