@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.ghost {
+  background: lightblue!important;
+}
+
+.block {
+  color: black;
+}
+
+#set-block-radius{
+  border-radius: 0px;
+  font-family: 'Source Sans Pro';
+  cursor: pointer;
+}
+
+#set-block-radius:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+.image-container-drag-drop{
+  width: 150px;
+  height: 150px;
+}
+
+.container-rules{
+  display: flex;
+  flex-direction: row;
+}
+
+.content-container{
+  margin-left: 20px;
+}

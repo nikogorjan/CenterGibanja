@@ -16,10 +16,14 @@
     "buffer-es": "^1.0.0",
     "framer-motion": "^10.12.16",
     "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
+    "react-sortablejs": "^6.1.4",
     "simplebar": "^6.2.5",
     "simplebar-react": "^3.2.4",
+    "sortablejs": "^1.15.0",
+    "styled-components": "^6.0.0-rc.3",
     "swiper": "^9.3.2"
   },
   "devDependencies": {

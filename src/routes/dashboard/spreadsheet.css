@@ -1,3 +1,20 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+p{
+  font-family: 'Source Sans Pro';
+  font-size: 12px;
+}
+
 .spreadsheet {
     border-collapse: collapse;
     width: 100%;
@@ -31,4 +48,12 @@
   
   .spreadsheet tr:last-child td {
     border-bottom: none;
+  }
+
+  .button-click{
+    margin-top: 20px;
+  }
+
+  button{
+    border-radius: 0px;
   }
