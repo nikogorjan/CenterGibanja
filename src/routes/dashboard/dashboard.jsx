@@ -197,7 +197,12 @@ const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
                 <p>Več možnosti</p>
               </label>
             </div>
-            {showSpreadsheet && <Spreadsheet onDataChange={handleSpreadsheetDataChange} />}
+            {showSpreadsheet && <Spreadsheet initialData={[
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""],
+      ["", "", ""],
+    ]} onDataChange={handleSpreadsheetDataChange} />}
 
             <div className="buttons-row">
               <button className="add-form-button" onClick={handleAddFormButtonClick}>Dodaj</button>
