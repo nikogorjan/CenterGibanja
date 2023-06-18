@@ -6,6 +6,8 @@ import { Buffer } from "buffer";
 import settingsIcon from './settings.png';
 import ImageIcon from "../dashboard/image.svg";
 import Spreadsheet from "./spreadsheet";
+import axios from 'axios';
+
 
 
 const StyledBlockWrapper = styled.div`
@@ -287,6 +289,92 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
     setSelectedBlock(null);
   };
 
+  const handleDeleteClick = () => {
+    const iddata = block.iddata;
+
+    // Send a POST request to the server to delete the data
+    axios
+      .post('http://localhost:5174/deleteData', { iddata })
+      .then((response) => {
+        console.log(response.data.message);
+        // Update the block list after successful deletion
+        setBlocks((prevBlocks) => prevBlocks.filter((b) => b.iddata !== iddata));
+        // Clear the selected block after deletion
+        setSelectedBlock(null);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  function convertImageToBlob(imageUrl) {
+    return new Promise((resolve, reject) => {
+      const xhr = new XMLHttpRequest();
+      xhr.open('GET', imageUrl, true);
+      xhr.responseType = 'blob';
+  
+      xhr.onload = function () {
+        if (this.status === 200) {
+          resolve(this.response);
+        } else {
+          reject(new Error('Failed to convert image to blob.'));
+        }
+      };
+  
+      xhr.onerror = function () {
+        reject(new Error('Failed to convert image to blob.'));
+      };
+  
+      xhr.send();
+    });
+  }
+
+  const handleAddFormButtonClick = async () => {
+    const combinedSpreadsheetData = spreadsheetData
+    .map(row => row.filter(cell => cell !== "").join(";"))
+    .filter(row => row !== "")
+    .join("|");
+
+   const newVal = textField4Value + ';' + textField3Value;
+
+  
+  const imageBlob = await convertImageToBlob(selectedImage);
+  console.log("Image Blob:", imageBlob);
+
+  const formData = new FormData();
+  formData.append("iddata", block.iddata);
+  formData.append("image", imageBlob, "image.jpg");
+  formData.append("textField1", textField1Value);
+  formData.append("textField2", textField2Value);
+  formData.append("textField3", newVal);
+  formData.append("showSpreadsheet", showSpreadsheet);
+  formData.append("spreadsheetData", combinedSpreadsheetData);
+
+  console.log(formData);
+
+  axios
+    .post("http://localhost:5174/updateData", formData, {
+      headers: {
+        "Content-Type": "multipart/form-data",
+      },
+    })
+    .then(response => {
+      console.log(response.data.message);
+      setSelectedImage(null);
+      setTextField1Value("");
+      setTextField2Value("");
+      setTextField3Value("");
+      setTextField4Value("");
+      setSpreadsheetData([]);
+      setShowSpreadsheet(false);
+    })
+    .catch(error => {
+      console.error(error);
+      // Handle error
+    });
+  };
+
+
   return (
     <form onSubmit={handleFormSubmit}>
       <div className="popup-overlay">
@@ -353,8 +441,8 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
           )}
 
           <div className="buttons-row">
-            <button className="add-form-button" >Spremeni</button>
-            <button className="delete-button">Izbriši</button>
+            <button className="add-form-button" onClick={handleAddFormButtonClick}>Spremeni</button>
+            <button className="delete-button" onClick={handleDeleteClick}>Izbriši</button>
             <button className="popup-button" onClick={handleBlockCloseClick}>Zapri</button>
           </div>
         </div>
