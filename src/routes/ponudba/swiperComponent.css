@@ -1,0 +1,1165 @@
+@import 'simplebar/dist/simplebar.min.css';
+
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
+
+
+
+.swiper-main{
+  display: flex;
+  flex-direction: column;
+  height: 130vh;
+  width: 100%;
+  background-color:rgb(23, 23, 23);
+ overflow: hidden;
+}
+
+/* Customize the appearance of the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 9999;
+}
+
+:hover::-webkit-scrollbar {
+  opacity: 1;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.swiper-container {
+    width: 1140px;
+    height: 734px;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    background-color: rgb(23, 23, 23);
+    position: relative;
+    top: 620px;
+    left: 560px;
+    
+  }
+  .swiper-slide {
+    margin-top: 80px;
+    width: 100%;
+    height: 534px;
+    display: flex;
+    flex-direction: row;
+    font-size: 24px;
+    color: #fff;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  
+
+  .slide-content {
+    width: 100%;
+    height: 534px;
+    
+    
+  }
+  
+  .slide-red {
+    background-color: red;
+  }
+  
+  .slide-blue {
+    background-color: blue;
+  }
+  
+  .slide-green {
+    background-color: green;
+  }
+  
+  .slide-yellow {
+    background-color: yellow;
+  }
+
+  .ponudba-slide{
+    background-color: white;
+    color: rgb(23, 23, 23);
+  }
+
+  
+
+  .carousel-button-left-new{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    left: 1020px;
+
+  /* Adjust the left value as needed */
+
+  }
+
+  .carousel-button-left-new:hover{
+    background-color: rgb(20, 131, 235);
+  }
+  
+  .carousel-button-right-new:hover{
+    background-color: rgb(20, 131, 235);
+  }
+  
+  
+  .carousel-button-right-new{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+    z-index: 999;
+    position: absolute;
+    left: 1080px;
+
+  }
+ 
+.position-constainer{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+  
+
+.swiper-button-prev {
+    color: rgb(23, 23, 23);
+    transform: scale(0.4); /* Adjust the scale as needed */
+    
+  }
+
+  .swiper-button-next {
+    color: rgb(23, 23, 23);
+    transform: scale(0.4); /* Adjust the scale as needed */
+  }
+
+
+  .swiper-button-next:hover {
+    transform: scale(0.6); /* Adjust the scale as needed */
+  }
+
+  .swiper-button-prev:hover {
+    transform: scale(0.6); /* Adjust the scale as needed */
+  }
+
+
+
+  .carousel-button-right-new{
+    transform: rotate(180deg);
+  }
+  
+  .carousel-button-left-new:hover .line1 {
+    transform: translateY(-50%) rotate(45deg) scale(1.2);
+  }
+  
+  .carousel-button-left-new:hover .line2 {
+    transform: translateY(-50%) rotate(-45deg) scale(1.2);
+  }
+  
+  .carousel-button-left-new:hover{
+    background-color: rgb(20, 131, 235);
+  }
+  
+  .carousel-button-right-new:hover .line3 {
+    transform: translateY(-50%) rotate(-45deg) scale(1.2);
+  }
+  
+  .carousel-button-right-new:hover .line4 {
+    transform: translateY(-50%) rotate(45deg) scale(1.2);
+  }
+  
+  .carousel-button-right-new:hover{
+    background-color: rgb(20, 131, 235);
+  }
+
+  .ponudba-image{
+    height: 534px;
+    width: 540px;
+    background-color: wheat;
+  }
+
+  .ponudba-data{
+    width: 700px;
+  height: 100%;
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  }
+
+  .ponudba-header{
+    font-size: 42px;
+  font-family: 'Source Sans Pro Bold';
+  color: rgb(23, 23, 23);
+  }
+
+  .ponudba-paragraph{
+    font-family: 'Source Sans Pro';
+  color: rgb(23, 23, 23);
+  margin-top: 20px;
+  font-size: 16px;
+  }
+
+  .ponudba-line{
+    border-top: 0.5px solid rgb(169, 169, 169);
+  width: 100%;
+  margin-top: 80px;
+  }
+
+  .swiper-pagination-bullet:not(.swiper-pagination-bullet-active) .swiper-pagination-bullet-inner {
+    background-color: rgb(169, 169, 169, 1); /* Set the color for non-selected dots */
+  }
+
+  .swiper-pagination {
+    transform: translateY(-60px); /* Adjust the value to move the pagination up */
+    
+  }
+
+  .buttons-container{
+    margin-top: 20px;
+  
+  }
+
+  .custom-button{
+    z-index: 9999999;
+    width: 127px;
+    height: 36px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 0px;
+    background-color: rgb(23, 23, 23);
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  .buttons-postavitev{
+    
+    flex-direction: row;
+  }
+
+  .selected{
+    background-color: rgb(20, 131, 235);
+  }
+
+  .additional-values{
+    position: absolute;
+  right: 80px;
+  top: 420px;
+  }
+
+  @media (max-width: 1300px) {
+    .swiper-container {
+      width: 800px;
+      height: 580px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 520px;
+      left: 420px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 380px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 380px;
+    }
+
+    .ponudba-image{
+      height: 380px;
+      width: 540px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 700px;
+    height: 100%;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 36px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 16px;
+    font-size: 12px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 50px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 110px;
+      height: 30px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 9px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 50px;
+    top: 300px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-70px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 48px;
+      width: 48px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 680px;
+  
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 48px;
+      width: 48px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 740px;
+  
+    }
+
+
+    
+  }
+
+  @media (max-width: 1025px) {
+    .swiper-container {
+      width: 600px;
+      height: 480px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 420px;
+      left: 290px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 280px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 280px;
+    }
+
+    .ponudba-image{
+      height: 280px;
+      width: 540px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 700px;
+    height: 100%;
+    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 28px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 16px;
+    font-size: 10px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 40px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 90px;
+      height: 25px;
+      margin-bottom: 2px;
+      margin-right: 10px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 7px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 30px;
+    top: 220px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-80px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 520px;
+      top: 30px;
+
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 560px;
+      top: 30px;
+    }
+
+    .buttons-container{
+      margin-top: 10px;
+    }
+  }
+ 
+  @media (max-width: 718px) and (max-height: 518px)  {
+    .swiper-container {
+      width: 500px;
+      height: 480px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 420px;
+      left: 240px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 220px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 220px;
+    }
+
+    .ponudba-image{
+      height: 220px;
+      width: 540px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 700px;
+    height: 100%;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 24px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 16px;
+    font-size: 10px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 20px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 88px;
+      height: 24px;
+      margin-bottom: 0px;
+      margin-right: 7px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 7px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 20px;
+    top: 175px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-80px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 420px;
+      top: 30px;
+
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 460px;
+      top: 30px;
+    }
+
+    .buttons-container{
+      margin-top: 4px;
+    }
+  }
+
+  @media (max-width: 821px) and (min-height: 519px)   {
+    .ponudba-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #slider{
+      flex-direction: column;
+    }
+
+    .swiper-container {
+      width: 540px;
+      height: 880px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 620px;
+      left: 240px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 650px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 650px;
+    }
+
+    .ponudba-image{
+      height: 540px;
+      width: 540px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 540px;
+    height: 100%;
+    background-color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 32px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 20px;
+    font-size: 14px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 40px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 140px;
+      height: 42px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 12px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 40px;
+    top: 580px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-80px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 48px;
+      width: 48px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 420px;
+      top: 0px;
+
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 48px;
+      width: 48px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 480px;
+      top: 0px;
+    }
+
+    .buttons-container{
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 600px) and (min-height: 519px)   {
+    .swiper-main{
+      
+      height: 150vh;
+    }
+    .ponudba-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #slider{
+      flex-direction: column;
+    }
+
+    .swiper-container {
+      width: 265px;
+      height: 680px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 480px;
+      left: 100px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 571px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 571px;
+    }
+
+    .ponudba-image{
+      height: 540px;
+      width: 265px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 265px;
+    height: 100%;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 28px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 12px;
+    font-size: 10px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 40px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 112px;
+      height: 32px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 10px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 10px;
+    top: 520px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-80px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 190px;
+      top: 30px;
+
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 230px;
+      top: 30px;
+    }
+
+    .buttons-container{
+      margin-top: 8px;
+    }
+
+    .swiper-pagination {
+      transform: translateY(20px); /* Adjust the value to move the pagination up */
+      
+    }
+  }
+
+
+  @media (max-width: 280px) and (min-height: 519px)   {
+    .swiper-main{
+      
+      height: 150vh;
+    }
+    .ponudba-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .swiper-slide{
+      display: flex;
+      flex-direction: column;
+    }
+
+    #slider{
+      flex-direction: column;
+    }
+
+    .swiper-container {
+      width: 240px;
+      height: 680px;
+      margin: 0 auto;
+      transform: translate(-50%, -50%);
+      background-color: rgb(23, 23, 23);
+      position: relative;
+      top: 480px;
+      left: 120px;
+      
+    }
+    .swiper-slide {
+      margin-top: 80px;
+      width: 100%;
+      height: 571px;
+      display: flex;
+      flex-direction: row;
+      font-size: 24px;
+      color: #fff;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  
+    .slide-content {
+      width: 100%;
+      height: 571px;
+    }
+
+    .ponudba-image{
+      height: 540px;
+      width: 240px;
+      background-color: wheat;
+    }
+
+    .ponudba-data{
+      width: 240px;
+    height: 100%;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    }
+  
+    .ponudba-header{
+      font-size: 28px;
+    font-family: 'Source Sans Pro Bold';
+    color: rgb(23, 23, 23);
+    }
+  
+    .ponudba-paragraph{
+      font-family: 'Source Sans Pro';
+    color: rgb(23, 23, 23);
+    margin-top: 12px;
+    font-size: 10px;
+    }
+  
+    .ponudba-line{
+      border-top: 0.5px solid rgb(169, 169, 169);
+    width: 100%;
+    margin-top: 40px;
+    }
+
+    .custom-button{
+      z-index: 9999999;
+      width: 100px;
+      height: 32px;
+      margin-bottom: 10px;
+      margin-right: 10px;
+      border-radius: 0px;
+      background-color: rgb(23, 23, 23);
+      font-size: 8px;
+      cursor: pointer;
+    }
+  
+  
+    .additional-values{
+      position: absolute;
+    right: 10px;
+    top: 520px;
+    }
+
+    .buttons-postavitev{
+    
+      flex-direction: row;
+    }
+  
+    .selected{
+      background-color: rgb(20, 131, 235);
+    }
+
+    .swiper-pagination {
+      transform: translateY(-80px); /* Adjust the value to move the pagination up */
+      
+    }
+
+    .carousel-button-left-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 160px;
+      top: 30px;
+
+    /* Adjust the left value as needed */
+  
+    }
+  
+    .carousel-button-left-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    .carousel-button-right-new:hover{
+      background-color: rgb(20, 131, 235);
+    }
+    
+    
+    .carousel-button-right-new{
+      background-color: white;
+      height: 32px;
+      width: 32px;
+      cursor: pointer;
+      z-index: 999;
+      position: absolute;
+      left: 200px;
+      top: 30px;
+    }
+
+    .buttons-container{
+      margin-top: 8px;
+    }
+
+    .swiper-pagination {
+      transform: translateY(20px); /* Adjust the value to move the pagination up */
+      
+    }
+  }

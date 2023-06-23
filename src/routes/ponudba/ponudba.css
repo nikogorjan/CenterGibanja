@@ -55,6 +55,7 @@
     font-family: 'Source Sans Pro Bold';
     color:white;
     font-size: clamp(32px, 5vw, 82px);
+    z-index: 999;
 }
 
 .ponudba-grid{
@@ -63,6 +64,7 @@
     top: 151px;
     display: flex;
     flex-direction: column;
+    z-index: 99;
   }
 
 

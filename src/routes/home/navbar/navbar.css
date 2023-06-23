@@ -10,6 +10,10 @@
   /* Add more src lines for different font file formats if needed */
 }
 
+.menu-open{
+  z-index: 99999;
+}
+
 .navbar {
     position: absolute;
     top: 0;
