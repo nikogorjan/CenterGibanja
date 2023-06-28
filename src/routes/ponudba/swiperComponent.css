@@ -13,7 +13,9 @@
   /* Add more src lines for different font file formats if needed */
 }
 
-
+.ponudba-paragraph.u2{
+  margin-top: 2px;
+}
 
 .swiper-main{
   display: flex;

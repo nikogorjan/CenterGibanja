@@ -23,7 +23,7 @@ const LoginForm = () => {
     console.log("ID:", username);
     console.log("Password:", password);
 
-    Axios.post("http://localhost:5174/login", {
+    Axios.post("https://centergibanja.si/api/login", {
       username: username,
       password: password,
     })

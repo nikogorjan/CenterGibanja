@@ -68,11 +68,10 @@ const Section2 = () => {
               </div>
               <div className="besedilo2slider">
                 <p className="besedilo2">
-                  Kolikokrat je “ne zmorem” zgolj izgovor za “nisem poskusil”?
-                  Sprejmi odločitev, stori potezo. Manj govori in več treniraj,
-                  a treniraj z glavo.
+                Center gibanja omogoča različne pristope k vadbi, saj lahko treniraš individualno, v skupini pod strokovnim nadzorom ali samostojno.
                 </p>
               </div>
+              <button className="buttononas">Kdo smo</button>
             </div>
             <div className="mobileimg">
               <div className="slika1">
@@ -98,11 +97,12 @@ const Section2 = () => {
               </div>
               <div className="besedilo2slider">
                 <p className="besedilo2">
-                  Kolikokrat je “ne zmorem” zgolj izgovor za “nisem poskusil”?
-                  Sprejmi odločitev, stori potezo. Manj govori in več treniraj,
-                  a treniraj z glavo.
+                Center gibanja je zasnovan tako, da lahko
+                  treniraš individualno ali v skupini pod
+                  strokovnim nadzorom ali samostojno.
                 </p>
               </div>
+              <button className="buttononas">Kdo smo</button>
             </div>
           </div>
         )}

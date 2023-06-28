@@ -10,9 +10,23 @@
   /* Add more src lines for different font file formats if needed */
 }
 
-.menu-open{
-  z-index: 99999;
+.fitnes-domov{
+  font-family: 'Source Sans Pro Bold';
+  position: absolute;
+    top: 50%; /* Adjust the vertical position as needed */
+    left:6%; /* Adjust the horizontal position as needed */
+    transform: translate(0, -50%); /* Center the container vertically */
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s; /* Add transition for smooth scaling effect */
+
 }
+
+.fitnes-domov:hover {
+  transform: translate(0, -50%) scale(1.1); /* Scale the element 10% larger */
+}
+
+
 
 .navbar {
     position: absolute;

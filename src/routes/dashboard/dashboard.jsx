@@ -121,7 +121,7 @@ const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
   console.log(formData);
 
   axios
-    .post("http://localhost:5174/data", formData, {
+    .post("https://centergibanja.si/api/data", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -161,7 +161,7 @@ const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
             <DragDrop ></DragDrop>
           </div>
         </div>
-      </div>
+      </div> 
       {isPopupOpen && (
         <div className="popup-overlay">
           <div className={`popup-window ${isPopupOpen ? 'open' : ''}`}>

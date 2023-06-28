@@ -109,8 +109,11 @@ const Navbar = () => {
     ); // Replace with the desired location or address
   };
 
+  
+
   return (
     <nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
+      <div className="fitnes-domov" onClick={handleDomovClick}>CENTER GIBANJA</div>
       <div
         className={`menu-icon ${isMenuOpen ? "open" : ""}`}
         onClick={handleMenuToggle}
@@ -160,7 +163,12 @@ const Navbar = () => {
           </div>
           <div className="menu-item-slider">
             <p className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
-              PRIJAVA NA TERMIN
+              PRIJAVA NA VADBE
+            </p>
+          </div>
+          <div className="menu-item-slider">
+            <p className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
+              URNIK VADB
             </p>
           </div>
           <div className="menu-item-slider">

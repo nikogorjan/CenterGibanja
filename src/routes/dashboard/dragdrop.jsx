@@ -48,7 +48,7 @@ export default function DragDrop() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:5174/getdata");
+      const response = await fetch("https://centergibanja.si/api/getdata");
       const data = await response.json();
       console.log("response: ", response);
       console.log("data: ", data);
@@ -95,14 +95,14 @@ export default function DragDrop() {
 
     // Update the "zaporedje" values in the database
     try {
-      await fetch("http://localhost:5174/updatezaporedje", {
+      await fetch("https://centergibanja.si/api/updatezaporedje", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(updatedBlocks),
       });
-
+ 
 
       setBlocks(updatedBlocks); // Update the state with the new order
     } catch (error) {
@@ -219,14 +219,50 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
   const [textField2Value, setTextField2Value] = useState(block.podnaslov);
   const [textField1Value, setTextField1Value] = useState(block.naslov);
   const [textField3Value, setTextField3Value] = useState(
-    block.cena_takoj === 1 && block.cena_takoj_vrednost !== null ? block.cena_takoj_vrednost.split(";")[0] : ""
+    block.cena_takoj === 1 && block.cena_takoj_vrednost !== null ? block.cena_takoj_vrednost.split(";")[1] : ""
   );
   const [textField4Value, setTextField4Value] = useState(
-    block.cena_takoj === 1 && block.cena_takoj_vrednost !== null ? block.cena_takoj_vrednost.split(";")[1] : ""
+    block.cena_takoj === 1 && block.cena_takoj_vrednost !== null ? block.cena_takoj_vrednost.split(";")[0] : ""
   );
   const [showSpreadsheet, setShowSpreadsheet] = useState(block.cena_takoj === 0);
 
-  const [spreadsheetData, setSpreadsheetData] = useState([]);
+  const [spreadsheetData, setSpreadsheetData] = useState(
+    block.izbira_vrednost
+      ? [
+          ["", "", ""], // Empty row at the beginning
+          ...block.izbira_vrednost.split("|").map((row, index) => {
+            if (row.includes(";")) {
+              return row.split(";");
+            } else {
+              return ["", row];
+            }
+          }),
+          ["", "", ""], // Empty row at the end
+          ["", "", ""] // Another empty row at the end
+        ]
+      : Array.from(Array(5), () => ["", "", ""]) // Five rows with empty cells
+  );
+
+  const [showDeletePopup, setShowDeletePopup] = useState(false);
+  const [deleteConfirmation, setDeleteConfirmation] = useState(false);
+
+  const handleDeleteClick2 = () => {
+    setShowDeletePopup(true);
+  };
+
+  const handleConfirmation = (confirmation) => {
+    if (confirmation) {
+      // User confirmed deletion
+      // Perform delete operation or any other logic here
+      // ...
+      console.log('Deleted!');
+    }
+
+    // Close the popup and reset the confirmation
+    setShowDeletePopup(false);
+    setDeleteConfirmation(false);
+  };
+
 
   const handleSpreadsheetDataChange = (data) => {
     setSpreadsheetData(data);
@@ -294,7 +330,7 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
 
     // Send a POST request to the server to delete the data
     axios
-      .post('http://localhost:5174/deleteData', { iddata })
+      .post('https://centergibanja.si/api/deleteData', { iddata })
       .then((response) => {
         console.log(response.data.message);
         // Update the block list after successful deletion
@@ -353,7 +389,7 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
   console.log(formData);
 
   axios
-    .post("http://localhost:5174/updateData", formData, {
+    .post("https://centergibanja.si/api/updateData", formData, {
       headers: {
         "Content-Type": "multipart/form-data",
       },
@@ -402,7 +438,8 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
           </div>
 
           {!showSpreadsheet && (
-            <><input type="text" className="input-field" placeholder="Cena" value={textField3Value} onChange={handleTextField3Change} /><input type="text" className="input-field" placeholder="Opis" value={textField4Value} onChange={handleTextField4Change} /></>
+            <><input type="text" className="input-field" placeholder="Cena" value={textField3Value} onChange={handleTextField3Change} />
+            <input type="text" className="input-field" placeholder="Opis" value={textField4Value} onChange={handleTextField4Change} /></>
 
           )}
 
@@ -432,7 +469,9 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
                         } else {
                           return ["", row];
                         }
-                      })
+                      }),
+                      ["", "", ""], // Empty row at the end
+                      ["", "", ""] // Another empty row at the end
                   ]
                   : Array.from(Array(5), () => ["", "", ""]) // Five rows with empty cells
               }
@@ -446,6 +485,7 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
             <button className="popup-button" onClick={handleBlockCloseClick}>Zapri</button>
           </div>
         </div>
+        
       </div>
       <button type="submit">Submit</button>
     </form>
@@ -455,7 +495,7 @@ function BlockForm({ block, setBlocks, setSelectedBlock }) {
 
 export async function fetchData2(setBlocks) {
   try {
-    const response = await fetch("http://localhost:5174/getdata");
+    const response = await fetch("https://centergibanja.si/api/getdata");
     const data = await response.json();
     console.log("response: ", response);
     console.log("data: ", data);

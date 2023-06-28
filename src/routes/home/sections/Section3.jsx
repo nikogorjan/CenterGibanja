@@ -53,15 +53,12 @@ const Section3 = () => {
         <div className="postavitev-text">
           <div className="sekcija3-naslov-slider">
             <h1 className="sekcija3-naslov">
-              USTVARJAMO MOČ, VZDRŽLJIVOST IN NEVERJETNE DOSEŽKE!
+              USTVARJAMO SKUPNOST
             </h1>
           </div>
           <div className="besedilo33-slider">
             <p className="besedilo33">
-              Na več kot 500 kvadratnih metrih prostora vam ponujamo popolno
-              telovadno izkušnjo, ki združuje crossfit, funkcionalno vadbo,
-              dvigovanje uteži in druge vadbene programe. Pridružite se nam
-              lahko tudi pri skupinski ali individualni vadbi.
+            V našem centru se osredotočamo na trening mladih športnikov, rekreativnih športnikov kot tudi starejših oseb, ki si želijo izboljšati svojo telesno kondicijo. Naše poslanstvo vključuje tudi kineziološko vadbo in rehabilitacijo po poškodbah. Za nas je pomembno, da ste se pripravljeni soočiti z realnostjo ter se odločiti za spremembo pod strokovnim nadzorom.
             </p>
           </div>
           <button className="section3-button" onClick={handlePonudbaClick}>
