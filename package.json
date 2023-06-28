@@ -11,6 +11,7 @@
     "host": "vite --host"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "axios": "^1.4.0",
     "buffer": "^6.0.3",
     "buffer-es": "^1.0.0",
