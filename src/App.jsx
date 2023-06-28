@@ -15,6 +15,7 @@ import { AuthProvider } from "./utils/authContext";
 import Ponudba from "./routes/ponudba/ponudba";
 import Kontakt from "./routes/kontakt/kontakt";
 import SwiperComponent from "./routes/ponudba/swiperComponent";
+import Prijava from "./routes/prijava/Prijava";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route path="/admin" element={<Admin />} />
       <Route path="/kontakt" element={<Kontakt />} />
       <Route path="/ponudba" element={<SwiperComponent />} />
+      <Route path="/prijava" element={<Prijava />} />
 
       <Route element={<PrivateRoutes />}>
         <Route path="/dashboard" element={<Dashboard />} />
