@@ -46,19 +46,19 @@ const Section1 = () => {
           <div className="text1Slider">
             <div className="text1Slider">
               <p className="text1">
-                Sprejmemo vsakogar. Ne glede na stopnjo
-                <br />
-                pripravljenosti!
+                Treniraj pod strokovnim nadzorom. Treniraj
+                
+                pametno. <br />Treningi prilagojeni za vsakogar.
               </p>
             </div>
           </div>
           <div className="buttonsSlider">
             <div className="buttons">
               <button className="button1" onClick={handlePonudbaClick}>
-                <p className="buttonText1">PONUDBA</p>
+                <p className="buttonText1">Ponudba</p>
               </button>
               <button className="button2" onClick={handleKontaktClick}>
-                <p className="buttonText1">KONTAKT</p>
+                <p className="buttonText1">Kontakt</p>
               </button>
             </div>
           </div>

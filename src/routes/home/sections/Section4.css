@@ -1,314 +1,753 @@
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
-    /* Add more src lines for different font file formats if needed */
-  }
+  font-family: 'Source Sans Pro';
+  src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
 
-  @font-face {
-    font-family: 'Source Sans Pro Bold';
-    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
-    /* Add more src lines for different font file formats if needed */
-  }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
 
-  .sekcija4-postavitev{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 15%;
-    left: 0%;
-    width: 100%;
+.naslov4-posta{
+  width: 600px;
+}
+
+
+
+.rotate:hover {
+  transform: rotate(2deg);
+  cursor: pointer;
+}
+
+
+.sekcija4-postavitev2{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.insta-row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.insta-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.insta-slika1{
+  width: 420px;
+  height: 420px;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.insta-slika2{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.insta-slika3{
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.sekcija4-instagram{
+  
+  text-align: justify;
+}
+
+.sekcija4-postavitev{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: flex-start;
+  text-align: center;   
+  justify-content: center;
+  top: 15%;
+  left: 0%;
+  width: 100%;
 }
 
 #sec4{
-    align-items: flex-start;
-    overflow: hidden;
-    background-color: rgb(23, 23, 23);
+  align-items: flex-start;
+  overflow: hidden;
+  background-color: rgb(23, 23, 23);
 }
 
 .image-section4{
-    width: 90%;
-    height: auto;
+  width: 90%;
+  height: auto;
 }
 
 .sekcija4-naslov{
-    color: white;
-    font-family: 'Source Sans Pro Bold';
-    font-size: clamp(24px, 4vw, 72px);;
+line-height: 90%;
+  color: white;
+  font-family: 'Source Sans Pro Bold';
+  font-size: clamp(24px, 3vw, 62px);;
+  text-align: left;
 
 }
 
 
+
+.image-section4 {
   
-  .image-section4 {
-    
-    
-    animation: zoomAnimation 20s linear infinite;
-  }
   
-  @keyframes zoomAnimation {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
+  animation: zoomAnimation 20s linear infinite;
+}
+
+@keyframes zoomAnimation {
+  0% {
+    transform: scale(1);
   }
-
-  .besedilo4{
-    margin-top: 0px;
-    font-size: clamp(9px, 2vw, 24px);
-    font-family: 'Source Sans Pro';
-    color: white;
+  50% {
+    transform: scale(1.1);
   }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.besedilo4{
+  margin-top: 20px;
+  font-size: clamp(14px, 2vw, 24px);
+  font-family: 'Source Sans Pro';
+  color: white;
+  
+}
 
 
-  .section4-button{
-    width: 300px;
-    height: 75px;
-    margin-top: 50px;
-    border-radius: 0px;
-    font-size: 16px;
-    background-color: white;
-    color: rgb(23, 23, 23);
-    transition: transform 0.3s ease;
-    font-family: 'Source Sans Pro Bold';
+.section4-button{
+  width: 220px;
+  height: 56px;
+  margin-top: 90px;
+  border-radius: 0px;
+  font-size: 16px;
+  background-color: white;
+  color: rgb(23, 23, 23);
+  transition: transform 0.3s ease;
+  font-family: 'Source Sans Pro Bold';
 }
 
 .section4-button:hover{
-    transform: translateY(-8px);
-    color: white;
-    background-color: rgb(20, 131, 235); 
+  transform: translateY(-8px);
+  color: white;
+  background-color: rgb(20, 131, 235); 
 }
 
 .postavitev-text4{
-    margin-left: 50px;
+  margin-left: 50px;
+  text-align: justify;
+  width: 700px;
+
 }
 
 .sekcija4-socials{
-    display: flex;
-    flex-direction: row;
+align-items: center;
+      text-align: center;
+      display: flex;
+justify-content: center;
+align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .instagram-icon-img4 {
-    width: 35px;
-    height: 35px;
-    margin-left: 15px;
-    
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  
+  cursor: pointer;
+  transition: transform 0.3s ease;
 
+}
+
+
+.facebook-icon-img4 {
+  width: 25px;
+  height: 25px;
+  
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+
+}
+
+.facebook-icon-img4:hover{
+  filter: brightness(0) invert(1);
+  
+
+}
+
+.instagram-icon-img4:hover {
+  filter: brightness(0) invert(1);
+
+
+}
+
+.sekcija4-socials{
+  align-items: center;
+      text-align: center;
+      display: flex;
+justify-content: center;
+align-items: center;
+  margin-top: 20px;
+}
+
+.phone4{
+  color: rgb(136, 136, 136);
+  font-size: clamp(16px, 2vw, 18px);
+  font-family: 'Source Sans Pro Bold';
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+.phone4:hover{
+  color: white;
+}
+
+.email4{
+  margin-top: 20px;
+  color: rgb(136, 136, 136);
+  font-size: clamp(16px, 2vw, 18px);
+  font-family: 'Source Sans Pro Bold';
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+}
+
+.email4:hover{
+  color: white;
+}
+
+@media (max-width: 1600px) {
+  .postavitev-text4{
+    
+    width: 600px;
   }
   
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
+  }
   
-  .facebook-icon-img4 {
-    width: 35px;
-    height: 35px;
+  .insta-slika1{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+  }
+}
+
+@media (max-width: 1300px) {
+  .postavitev-text4{
     
-    cursor: pointer;
-    transition: transform 0.3s ease;
-
-
+    width: 500px;
   }
-
-  .facebook-icon-img4:hover{
-    filter: brightness(0) invert(1);
-    
-
+  
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
   }
-
-  .instagram-icon-img4:hover {
-    filter: brightness(0) invert(1);
-
-
+  
+  .insta-slika1{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    margin-right: 20px;
   }
-
-  .sekcija4-socials{
-    margin-top: 300px;
+  
+  .insta-slika2{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
   }
-
-  .email4{
-    margin-top: 10px;
-    color: rgb(136, 136, 136);
-    font-size: clamp(9px, 2vw, 24px);
-    font-family: 'Source Sans Pro Bold';
-    cursor: pointer;
-  }
-
-  .email4:hover{
-    color: white;
-  }
-
-  @media (max-width: 1300px) {
-    .postavitev-text4{
-        margin-left: 0px;
-    }
-  }
-
-  @media (max-width: 1025px) {
-    .postavitev-text4{
-        margin-left: 20px;
-    }
-
-    .image-section4{
-        width: 90%;
-        height: auto;
-    }
-
-    .postavitev-slika4{
-        width: 500px;
-    }
-
-    .sekcija4-socials{
-        margin-top: 100px;
-      }
-  }
-
-  @media (max-width: 718px) and (max-height: 518px)  {
-    .section4-button{
-        width: 200px;
-        height: 50px;
-        margin-top: 50px;
-        border-radius: 0px;
-        font-size: 16px;
-        background-color: white;
-        color: rgb(23, 23, 23);
-        transition: transform 0.3s ease;
-        font-family: 'Source Sans Pro Bold';
-    }
-
-    .postavitev-text4{
-        margin-left: 0px;
-    }
-    
-  }
-
-  @media (max-width: 821px) and (min-height: 519px)  {
-    .sekcija4-postavitev{
-        flex-direction: column;
-        align-items: center;
-        
-    position: relative;
-    top: 10%;
-    left: 0%;
-    width: 90%;
-    }
-
-    .image-section4{
-        width: 100%;
-    }
-
-    .postavitev-slika4{
-        width: 600px;
-    }
-
-    .postavitev-text4{
-        margin-top: 40px;
-        text-align: center;
-        align-items: center;
-    }
-
-    .sekcija4-socials{
-        align-items: center;
-        text-align: center;
-        display: flex;
-  justify-content: center;
-  align-items: center;
-    }
-
-    .sekcija4-naslov{
-        color: white;
-        font-family: 'Source Sans Pro Bold';
-        font-size: 42px;
-    
-    }
-  }
-
-  @media (max-width: 600px) and (min-height: 519px) {
-    .sekcija4-postavitev{
-        flex-direction: column;
-        align-items: center;
-        
-    position: relative;
-    top: 10%;
-    left: 0%;
-    width: 100%;
-    }
-
-    .image-section4{
-        width: 60%;
-    }
-
-    .postavitev-slika4{
-        width: 600px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .postavitev-text4{
-        margin-top: 20px;
-        text-align: center;
-        align-items: center;
-        margin-left: 0px;
-    }
-
-    .sekcija4-socials{
-        margin-top: 15px;
-        align-items: center;
-        text-align: center;
-        margin-left: 0%;
-        display: flex;
-  justify-content: center;
-  align-items: center;
-    }
-
-    .sekcija4-naslov{
-        color: white;
-        font-family: 'Source Sans Pro Bold';
-        font-size: 42px;
-    
-    }
-
-    .section4-button{
-        width: 200px;
-        height: 50px;
-    }
-
-    .facebook-icon-img4{
-        
-    }
-  }
-
-
-  @media screen and (min-width: 1921px){
-    .image-section4{
-      width: 110%;
+  
+  .insta-slika3{
+    width: 150px;
+    height: 150px;
+    background-color: white;
   }
 
   .postavitev-text4{
-    margin-left: 400px;
+      margin-left: 50px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .postavitev-text4{
+    
+    width: 420px;
+  }
+  
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
+  }
+  
+  .insta-slika1{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+  }
+
+  .sekcija4-postavitev2{
+    margin-top: 150px;
+  }
+  .postavitev-text4{
+      margin-left: 20px;
+  }
+
+  .image-section4{
+      width: 90%;
+      height: auto;
+  }
+
+  .postavitev-slika4{
+      width: 500px;
   }
 
   .sekcija4-socials{
-    margin-top: 25px;
     align-items: center;
-    text-align: center;
-    margin-left: 0%;
-    margin-top: 50%;
-    display: flex;
-justify-content: baseline;
+      text-align: center;
+      display: flex;
+justify-content: center;
 align-items: center;
-width: 300px;
+      margin-top: 100px;
+    }
+}
+
+@media (max-width: 718px) and (max-height: 518px)  {
+  .postavitev-text4{
+    
+    width: 320px;
+  }
+  
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
+  }
+  
+  .insta-slika1{
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+  }
+
+  .sekcija4-postavitev2{
+    margin-top: 150px;
+  }
+  .section4-button{
+      width: 200px;
+      height: 56px;
+      margin-top: 50px;
+      border-radius: 0px;
+      font-size: 16px;
+      background-color: white;
+      color: rgb(23, 23, 23);
+      transition: transform 0.3s ease;
+      font-family: 'Source Sans Pro Bold';
+
+  }
+
+  .postavitev-text4{
+      margin-left: 0px;
+  }
+  
+}
+
+@media (max-width: 821px) and (min-height: 519px)  {
+
+  .sekcija4-naslov{
+    text-align: center;
+  }
+
+  #posta4{
+    width: 500px;
+  }
+
+  #besedilo44{
+    text-align: center;
+  }
+
+  .postavitev-text4{
+    
+    width: 520px;
+  }
+  
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
+  }
+  
+  .insta-slika1{
+    width: 420px;
+    height: 420px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+  }
+
+  .sekcija4-postavitev2{
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .sekcija4-postavitev{
+      flex-direction: column;
+      align-items: center;
+      
+  position: relative;
+  top: 10%;
+  left: 0%;
+  width: 90%;
+  }
+
+  .image-section4{
+      width: 100%;
+  }
+
+  .postavitev-slika4{
+      width: 600px;
+  }
+
+  .postavitev-text4{
+      margin-top: 40px;
+      text-align: center;
+      align-items: center;
+  }
+
+  .sekcija4-socials{
+      align-items: center;
+      text-align: center;
+      display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .sekcija4-naslov{
+      color: white;
+      font-family: 'Source Sans Pro Bold';
+  
+  }
+
+  .besedilo4{
+    padding-left: 12px;
+  padding-right: 12px;
+  text-align: justify;
+  }
+}
+
+@media (max-width: 600px) and (min-height: 519px) {
+  .sekcija4-instagram{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .sekcija4-naslov{
+    text-align: center;
+  }
+
+  #posta4{
+    width: 375px;
+    text-align: justify;
+  }
+
+  #besedilo44{
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .postavitev-text4{
+    
+    width: 375px;
+  }
+  
+  .naslov4-posta{
+    width: 100%;
+    text-align: left;
+  }
+  
+  .insta-slika1{
+    width: 180px;
+    height: 180px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+  }
+
+  .sekcija4-postavitev2{
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sekcija4-postavitev{
+      flex-direction: column;
+      align-items: center;
+      
+  position: relative;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  }
+
+  .image-section4{
+      width: 60%;
+  }
+
+  .postavitev-slika4{
+      width: 600px;
+      align-items: center;
+      text-align: center;
+  }
+
+  .postavitev-text4{
+      margin-top: 20px;
+      text-align: center;
+      align-items: center;
+      margin-left: 0px;
+  }
+
+  .sekcija4-socials{
+      margin-top: 20px;
+      align-items: center;
+      text-align: center;
+      margin-left: 0%;
+      display: flex;
+justify-content: center;
+align-items: center;
+  }
+
+  .sekcija4-naslov{
+      color: white;
+      font-family: 'Source Sans Pro Bold';
+  
+  }
+
+  .section4-button{
+      width: 200px;
+      height: 56px;
+      transform: translateY(-20px);
+      margin-top: 20px;
+  }
+
+  .facebook-icon-img4{
+      
+  }
+}
+
+
+@media screen and (min-width: 1921px){
+  .email4{
+    margin-top: 50px;
+  }
+
+  .image-section4{
+    width: 110%;
+}
+
+.postavitev-text4{
+}
+
+.sekcija4-socials{
+  align-items: center;
+      text-align: center;
+      display: flex;
+justify-content: center;
+align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .sekcija4-naslov{
-    color: white;
-    font-family: 'Source Sans Pro Bold';
-    font-size: 121px;
+  color: white;
+  font-family: 'Source Sans Pro Bold';
+  font-size: 90px;
 
 }
 
+.postavitev-text4{
+  margin-left: 120px;
+  width: 900px;
+}
 
+.naslov4-posta{
+  width: 900px;
+  text-align: left;
+}
+
+.insta-slika1{
+  width: 620px;
+  height: 620px;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.insta-slika2{
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.insta-slika3{
+  width: 300px;
+  height: 300px;
+  background-color: white;
+}
+
+.besedilo4{
+  font-size: 32px;
+}
+.sekcija4-postavitev2{
+  margin-top: 300px;
+}
+
+
+
+}
+
+@media (max-width: 280px) and (min-height: 519px)   {
+  .insta-row{
+    margin-left: 0px;
   }
+  .sekcija4-naslov{
+    font-size: 21px;
+  }
+  .sekcija4-instagram{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .sekcija4-naslov{
+    text-align: center;
+  }
+
+  #posta4{
+    width:280px;
+    text-align: justify;
+  }
+
+  #besedilo44{
+    text-align: center;
+  }
+
+  .postavitev-text4{
+    
+    width: 280px;
+  }
+  
+  .naslov4-posta{
+    width: 900px;
+    text-align: left;
+  }
+  
+  .insta-slika1{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  
+  .insta-slika2{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 20px;
+  }
+  
+  .insta-slika3{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+  }
+
+  .sekcija4-postavitev2{
+    margin-top: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+

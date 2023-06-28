@@ -1,21 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./spreadsheet.css";
 
-const Spreadsheet = ({ onDataChange }) => {
-  const [data, setData] = useState([
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-  ]);
+const Spreadsheet = ({ initialData, onDataChange }) => {
+  const [data, setData] = useState(initialData);
 
   const handleChange = (event, rowIndex, colIndex) => {
-    const newData = [...data];
-    newData[rowIndex][colIndex] = event.target.value;
-    setData(newData);
+    const newValue = event.target.value;
+
+    setData((prevData) => {
+      const newData = [...prevData];
+      newData[rowIndex][colIndex] = newValue;
+      return newData;
+    });
 
     // Call the onDataChange prop with the updated data
-    onDataChange(newData);
+    onDataChange(data);
   };
 
   const handleAddRow = () => {
@@ -23,6 +22,8 @@ const Spreadsheet = ({ onDataChange }) => {
     newData.push(["", "", ""]);
     setData(newData);
   };
+
+  
 
   return (
     <div>
@@ -33,7 +34,7 @@ const Spreadsheet = ({ onDataChange }) => {
               {row.map((cell, colIndex) => (
                 <td key={colIndex}>
                   {rowIndex === 0 ? (
-                    <p>
+                    <p className="checkbox-para">
                       {colIndex === 0
                         ? "Ponudba"
                         : colIndex === 1
@@ -53,7 +54,9 @@ const Spreadsheet = ({ onDataChange }) => {
           ))}
         </tbody>
       </table>
-      <button className="button-click" onClick={handleAddRow}>Add Row</button>
+      <button className="button-click" onClick={handleAddRow}>
+        Add Row
+      </button>
     </div>
   );
 };

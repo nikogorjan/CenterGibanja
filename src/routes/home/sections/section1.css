@@ -1,299 +1,321 @@
 @font-face {
-    font-family: 'Source Sans Pro';
-    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
-    /* Add more src lines for different font file formats if needed */
-  }
+  font-family: 'Source Sans Pro';
+  src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
 
-  @font-face {
-    font-family: 'Source Sans Pro Bold';
-    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
-    /* Add more src lines for different font file formats if needed */
-  }
+@font-face {
+  font-family: 'Source Sans Pro Bold';
+  src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+  /* Add more src lines for different font file formats if needed */
+}
 
-  #bg1{
-    background-image: url("slika1.jpg");
-  background-size: cover;
-  background-position: center;
-  }
+#bg1{
+  background-image: url("slika1.jpg");
+background-size: cover;
+background-position: center;
+}
 
 
 .hook{
-    color: white;
-    font-family: 'Source Sans Pro Bold';
-    font-size: clamp(70px, 6vw,144px);
-    font-weight: bold;
-    
-    
+  color: white;
+  font-family: 'Source Sans Pro Bold';
+  font-size: clamp(70px, 6vw,144px);
+  font-weight: bold;
+  
+  
 }
 
 
 
 .text1{
-    font-family: 'Source Sans Pro';
-    font-size: 32px;
-    color: white;
-    
+  font-family: 'Source Sans Pro';
+  font-size: 32px;
+  color: white;
+  margin-left: 7px;
+  text-align: justify;
+
 }
 
 
 
 .textPosition{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  position: relative;
 
 
 }
 
 .buttons{
-  flex-direction: row;
+flex-direction: row;
+margin-left: 7px;
 }
 
 .textPositionInner {
-    position: absolute;
-    top: 38%;
-    left: 8.5%;
-    
-  }
+  position: absolute;
+  top: 38%;
+  left: 8.5%;
+  text-align: justify;
+}
 
-  .button1{
-    width: 250px;
-    height: 62px;
-    margin-top: 30px;
-    background-color: white;
-    border-radius: 0;
-    transition: transform 0.3s ease;
-    color: rgb(23, 23, 23);
-
-    
-  }
-
-  .button2{
-    width: 250px;
-    height: 62px;
-    margin-top: 30px;
-    margin-left: 30px;
-    background-color: transparent;
-    border-radius: 0;
-    transition: transform 0.3s ease;
-    color: white;
-    border-radius: 0;
-    border-width: 1px;
-  border-style: solid;
-    border-color: white;
-    
-  }
-
-  .button1:hover {
-    transform: translateY(-8px);
-    color: white;
-    background-color: rgb(20, 131, 235);
-  }
-
-  .button2:hover {
-    transform: translateY(-8px);
-    color: rgb(23, 23, 23);
-    background-color: white;
-  }
-  
-  .buttonText1{
-    font-size: 14px;
-    font-family: 'Source Sans Pro Bold';
-  }
+.button1{
+  width: 220px;
+  height: 56px;
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  color: rgb(23, 23, 23);
 
   
+}
 
-@media (max-width: 600px) {
-  .textPositionInner{
-    justify-content: center; /* Center horizontally */
-  align-items: center; 
-  text-align: center;
-  left: 0%;
-  top: 32%;
-  }
-
+.button2{
+  width: 220px;
+  height: 56px;
+  margin-top: 30px;
+  margin-left: 30px;
+  background-color: transparent;
+  border-radius: 0;
+  transition: transform 0.3s ease;
+  color: white;
+  border-radius: 0;
+  border-width: 1px;
+border-style: solid;
+  border-color: white;
   
+}
 
-  .button2{
-    margin-left: 0px;
-    margin-top: 20px;
-  }
+.button1:hover {
+  transform: translateY(-8px);
+  color: white;
+  background-color: rgb(20, 131, 235);
+}
+
+.button2:hover {
+  transform: translateY(-8px);
+  color: rgb(23, 23, 23);
+  background-color: white;
+}
+
+.buttonText1{
+  font-size: 16px;
+  font-family: 'Source Sans Pro Bold';
+}
 
 
 
-  .hook {
-    color: white;
-    font-family: 'Source Sans Pro';
-    font-size: 50px;
-    font-weight: bold;
+@media (max-width: 810px) {
+.textPositionInner{
+  position: relative; /* Change to relative positioning */
+    top: auto; /* Reset top positioning */
+    left: auto; /* Reset left positioning */
+    text-align: center; /* Center the text horizontally */
+
+}
+
+.textPosition{
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  /* Add any other styles as needed */
+}
+
+.buttonsSlider{
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+
+
+.button2{
+  margin-left: 0px;
+  margin-top: 20px;
+
+}
+
+
+
+.hook {
+  color: white;
+  font-family: 'Source Sans Pro';
+  font-size: 50px;
+  font-weight: bold;
 }
 
 
 
 .buttons{
-  flex-direction: column;
+  display: flex;
+flex-direction: column;
+
 }
 
 .text1{
-  font-family: 'Source Sans Pro';
-  font-size: 16px;
-  color: white;
-  }
+font-family: 'Source Sans Pro';
+font-size: 14px;
+color: white;
+text-align: center;
+}
+}
+
+@keyframes fade-in {
+0% {
+  /*opacity: 0.9;*/
+  filter: brightness(10%);
+
+  background-color: black; /* Set the initial background color */
+  transform: scale(1.03); /* Add initial scale transformation */
+
+
+}
+100% {
+  /*opacity: 1;*/
+  filter: brightness(100%);
+
+  background-color: transparent; /* Set the final background color */
+  transform: scale(1); /* Add final scale transformation */
+
+}
+}
+
+.Scroll.fade-in {
+animation: fade-in 2s forwards;
+}
+
+@keyframes move-up {
+0% {
+  transform: translateY(100%);
+  opacity: 0;
+}
+100% {
+  transform: translateY(0%);
+  opacity: 1;
+}
+}
+
+.hook{
+  animation: move-up 2s forwards;
   }
   
-  @keyframes fade-in {
-  0% {
-    /*opacity: 0.9;*/
-    filter: brightness(10%);
-  
-    background-color: black; /* Set the initial background color */
-    transform: scale(1.03); /* Add initial scale transformation */
-  
-  
-  }
-  100% {
-    /*opacity: 1;*/
-    filter: brightness(100%);
-  
-    background-color: transparent; /* Set the final background color */
-    transform: scale(1); /* Add final scale transformation */
-  
-  }
+  .hookSlider{
+  overflow: hidden;
   }
   
-  .Scroll.fade-in {
-  animation: fade-in 2s forwards;
+  .text1{
+  animation: move-up 2s forwards;
   }
   
-  @keyframes move-up {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 1;
-  }
+  .text1Slider{
+  overflow: hidden;
+  transform: translateY(-2px);
+
   }
   
-  .hook{
-    animation: move-up 2s forwards;
+  .buttons{
+  animation: move-up 2s forwards;
+  }
+  
+  .buttonsSlider{
+  overflow: hidden;
+  }
+
+  @media screen and (orientation: landscape) and (max-width: 960px) {
+    .textPosition{
+      justify-content: center; /* Center horizontally */
+    align-items: center; 
+    text-align: center;
+    left: 0%;
     }
-    
-    .hookSlider{
-    overflow: hidden;
-    }
-    
-    .text1{
-    animation: move-up 2s forwards;
-    }
-    
-    .text1Slider{
-    overflow: hidden;
-    }
-    
-    .buttons{
-    animation: move-up 2s forwards;
-    }
-    
-    .buttonsSlider{
-    overflow: hidden;
-    }
-  
-    @media screen and (orientation: landscape) and (max-width: 960px) {
-      .textPosition{
-        justify-content: center; /* Center horizontally */
-      align-items: center; 
-      text-align: center;
+
+    .textPositionInner {
+      position: relative;
+      top: 0%;
       left: 0%;
-      }
+      
+    }
 
-      .textPositionInner {
-        position: relative;
-        top: 0%;
-        left: 0%;
-        
-      }
+    .button1{
+      
+    }
 
-      .button1{
-        
-      }
+    .button2{
+      
+      margin-left: 0px;
+    }
+  } 
 
-      .button2{
-        
-        margin-left: 20px;
-      }
-    } 
+  @media (max-width: 280px) {
+    .textPosition{
+      justify-content: center; /* Center horizontally */
+    align-items: center; 
+    text-align: center;
+    left: 0%;
+    }
 
-    @media (max-width: 280px) {
-      .textPosition{
-        justify-content: center; /* Center horizontally */
-      align-items: center; 
-      text-align: center;
+    .textPositionInner {
+      position: relative;
+      top: 0%;
       left: 0%;
-      }
 
-      .textPositionInner {
-        position: relative;
-        top: 0%;
-        left: 0%;
-
-      }
-      .button1{
-       width: 200px;
-       height: 75px; 
-      }
-
-      .button2{
-        width: 200px;
-        height: 75px; 
-       
-       }
-
-       .text1{
-        margin: 1px;
-       }
+    }
+    .button1{
+     width: 200px;
+     height: 75px; 
     }
 
+    .button2{
+      width: 200px;
+      height: 75px; 
+     
+     }
 
-    @media (max-height: 400px) {
-      .button2{
-        margin-left: 0px;
-       
-       }
-    }
+     .text1{
+      margin: 1px;
+     }
+  }
 
 
-    @media (max-width: 688px) {
-      .button2{
-        margin-left: 0px;
-       
-       }
-    }
+  @media (max-height: 400px) {
+    .button2{
+      margin-left: 0px;
+     
+     }
+  }
 
-    .overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
+
+  @media (max-width: 688px) {
+    .button2{
+      margin-left: 0px;
+     
+     }
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: black; /* Black color with opacity */
+    z-index: 9999; /* Ensure the overlay appears on top of other content */
+
+  }
+
+  .overlay.drop{
+    animation: overlay-animation 1s forwards;
+
+  }
+  
+  @keyframes overlay-animation {
+    0% {
       height: 0%;
-      background-color: black; /* Black color with opacity */
-      z-index: 9999; /* Ensure the overlay appears on top of other content */
-
     }
-
-    .overlay.drop{
-      animation: overlay-animation 1s forwards;
-
+    100% {
+      height: 100%;
     }
-    
-    @keyframes overlay-animation {
-      0% {
-        height: 0%;
-      }
-      100% {
-        height: 100%;
-      }
-    }
+  }
