@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.prijava-main{
+    background-color: rgb(23, 23, 23);
+    height: 120vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.prijava-postavitev{
+    display: flex;
+    flex-direction: column;
+    margin-top: 155px;
+    margin-left: 100px;
+}
+
+.prijava-naslov{
+    color: white;
+    font-family: 'Source Sans Pro Bold';
+    font-size: clamp(24px, 3vw, 62px);;
+}
+
+.prijava-sporocilo{
+    color: white;
+    font-family: 'Source Sans Pro';
+    font-size: clamp(14px, 2vw, 18px);
+    text-align: justify;
+    width: 500px;
+    margin-top: 20px;
+}
+
+.prijava-form{
+    margin-top: 20px;
+    color: white;
+    font-family: 'Source Sans Pro';
+    width: 400px;
+}
+
+input[type=text].prijava-input {
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-family: 'Source Sans Pro';
+
+  }
+
+  input[type=text].prijava-input:focus {
+    outline: none; /* Remove the focus outline */
+
+  }
+
+  .label-margin{
+    margin-top: 10px;
+  }
+
+  .priajva-button{
+    background-color: white;
+    margin: 10px;
+    color: rgb(23, 23, 23);
+    font-family: 'Source Sans Pro Bold';
+    font-size: 12px;
+    width: 290px;
+    height: 45px;
+  }
+
+  .priajva-button:hover{
+    background-color: rgb(20, 131, 235);
+  }
+
+  .prijava-buttons-container{
+    width: 1000px;
+  }
+  .label-margin label {
+    display: block;
+  }
+  
+  .label-margin textarea {
+    width: 100%;
+    height: 70px; /* Adjust the desired height */
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .prijava-area:focus{
+    outline: none;
+  }
+
+  .prijava-area{
+    border: 1px solid white;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-family: 'Source Sans Pro';
+  }
+
+  .submit-button{
+    width: 128px;
+    height: 42px;
+    background-color: white;
+    color: rgb(23, 23, 23);
+    font-family: 'Source Sans Pro Bold';
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .submit-button:hover{
+    background-color: rgb(20, 131, 235);
+  }
