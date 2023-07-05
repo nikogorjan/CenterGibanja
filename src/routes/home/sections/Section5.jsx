@@ -22,6 +22,14 @@ const Section5 = () => {
         videoRef.current.play();
       }
     }, [isUserInteracted]);
+
+    const handleMobileNumberClick = () => {
+      window.location.href = "tel:+386 31 643 234"; // Replace with your mobile number
+    };
+  
+    const handleEmailClick = () => {
+      window.location.href = "mailto:info@centergibanja.si"; // Replace with your email address
+    };
   
     return (
       <div className="Scroll" id="sec5">
@@ -37,10 +45,14 @@ const Section5 = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <div className="email4">info@centergibanja.si</div>
-        <div className="phone4">+386 41 752 460</div>
-  
+        <div onClick={handleEmailClick} className="email4">info@centergibanja.si</div>
+        <div onClick={handleMobileNumberClick} className="phone4">+386 41 752 460</div>
+
+        
         <div className="sekcija4-socials">
+        <a className="social-link" href="https://www.facebook.com/Mocgibanja"
+                target="_blank"
+                rel="noopener noreferrer">
           <img
             src={Facebook}
             alt="Menu Icon"
@@ -48,7 +60,11 @@ const Section5 = () => {
             width="40"
             height="40"
           />
-  
+          </a>
+
+          <a className="social-link" href="https://www.instagram.com/center_gibanja_murskasobota/"
+                target="_blank"
+                rel="noopener noreferrer">
           <img
             src={Instagram}
             alt="Menu Icon"
@@ -56,6 +72,7 @@ const Section5 = () => {
             width="40"
             height="40"
           />
+          </a>
         </div>
       </div>
     );

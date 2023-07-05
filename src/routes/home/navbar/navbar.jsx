@@ -38,6 +38,28 @@ const Navbar = () => {
     }
   };
 
+  const handlePrijavaClick = () => {
+    if (window.location.pathname !== "/prijava") {
+      const kontaktMenuItems = document.querySelectorAll(".menu-item.animate");
+      kontaktMenuItems.forEach((menuItem) =>
+        menuItem.classList.add("move-down")
+      );
+      const lokacijaItem = document.querySelector(".kontakt-lokacija");
+      lokacijaItem.classList.add("out");
+
+      setTimeout(() => {
+        const overlay = document.querySelector(".overlay");
+        overlay.classList.add("drop");
+      }, 200);
+
+      setTimeout(() => {
+        navigate("/prijava");
+      }, 1000);
+    } else {
+      handleMenuToggle();
+    }
+  };
+
   const handleDomovClick = () => {
     navigate("/");
   };
@@ -62,7 +84,7 @@ const Navbar = () => {
     } else {
       handleMenuToggle();
     }
-  };
+  }; 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -124,6 +146,9 @@ const Navbar = () => {
       </div>
       <div className={`menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menuNavbar">
+          <a className="social-link" href="https://www.facebook.com/Mocgibanja"
+                target="_blank"
+                rel="noopener noreferrer">
           <img
             src={Facebook} // Replace IconMenuClosed with the actual image source
             alt="Menu Icon"
@@ -131,7 +156,10 @@ const Navbar = () => {
             width="40"
             height="40"
           />
-
+          </a>
+          <a href="https://www.instagram.com/center_gibanja_murskasobota/"
+                target="_blank"
+                rel="noopener noreferrer">
           <img
             src={Instagram} // Replace IconMenuClosed with the actual image source
             alt="Menu Icon"
@@ -139,6 +167,7 @@ const Navbar = () => {
             width="40"
             height="40"
           />
+          </a>
           <div className="navbar-menu-icon" onClick={handleMenuToggle}>
             <div className="linex"></div>
             <div className="linex"></div>
@@ -162,7 +191,7 @@ const Navbar = () => {
             </p>
           </div>
           <div className="menu-item-slider">
-            <p className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
+            <p onClick={handlePrijavaClick} className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
               PRIJAVA NA VADBE
             </p>
           </div>

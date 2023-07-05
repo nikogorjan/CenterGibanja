@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Prijava.css";
 import Navbar from "../home/navbar/navbar.jsx";
 import { Buffer } from "buffer";
+import emailjs from '@emailjs/browser';
 
 const Prijava = () => {
     const [fullName, setFullName] = useState("");
@@ -28,13 +29,7 @@ const Prijava = () => {
         setMessage(e.target.value);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        // Here, you can perform any additional actions with the `fullName` value, such as sending it to the backend server.
-
-        // Reset the form after submission if needed
-        setFullName("");
-    };
+    
 
     useEffect(() => {
         fetchData2(setBlocks);
@@ -52,10 +47,45 @@ const Prijava = () => {
         }
     }, [blocks]);
 
+    const handleSubmit = (e) => {
+        console.log("before prevent");
+
+        e.preventDefault();
+        console.log("sending email");
+        // Here, you can perform any additional actions with the `fullName` value, such as sending it to the backend server.
+        const templateParams = {
+            user_name: fullName,
+            user_phone: phoneNum,
+            user_email: email,
+            user_vadba: selected,
+            message: message
+          };
+
+          emailjs.send('service_ntc93k8', 'template_hsu34ci', templateParams, 'qjctlMy68iSCBqueO')
+          .then((response) => {
+            console.log('Email sent successfully:', response.text);
+            window.alert('Email sent successfully:');
+
+            // Reset the form after successful submission if needed
+            setFullName("");
+            setPhoneNum("");
+            setEmail("");
+            setSelected("");
+            setMessage("");
+          })
+          .catch((error) => {
+            console.error('Error sending email:', error);
+          });
+
+        // Reset the form after submission if needed
+        setFullName("");
+    };
+
 
 
     return (
         <div className="prijava-main">
+            
             <Navbar />
             <div className="prijava-postavitev">
                 <div className="prijava-naslov">PRIJAVA NA VADBO</div>
@@ -103,6 +133,7 @@ const Prijava = () => {
                             <div className="prijava-buttons-container">
                                 {blocks.map((block) => (
                                     <button
+                                    type="button"
                                         key={block.iddata}
                                         onClick={() => handleButtonSelect(block.naslov)}
                                         className="priajva-button"
