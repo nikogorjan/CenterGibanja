@@ -1,0 +1,493 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.selected-name{
+    color: rgb(23, 23, 23);
+    font-size: 64px;
+    font-family: 'Source Sans Pro Bold';
+    text-transform: uppercase;
+
+}
+
+.section2-trener-container{
+    height: 100vh;
+    width: 100%;
+}
+
+.selected-background-paragraph{
+    color: white;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 149px;
+    font-size: 290px;
+    -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+}
+
+.selected-image-holder{
+    width: 465px;
+    height: 465px;
+    background-color: black;
+    position: absolute;
+    top: 227px;
+    left: 410px;
+    background-size: cover;
+    background-position: center;
+}
+
+.selected-postavitev{
+    position: absolute;
+    top: 320px;
+    left: 920px;
+    width: 500px;
+}
+
+.selected-poklic{
+    color: rgb(23, 23, 23);
+    font-size: 32px;
+    font-family: 'Source Sans Pro Bold';
+    margin-top: 30px;
+    text-transform: uppercase;
+
+}
+
+.selected-opis{
+    color: rgb(23, 23, 23);
+    font-size: 24px;
+    font-family: 'Source Sans Pro';
+    margin-top: 30px;
+    text-align: justify;
+}
+
+@media (max-width: 1600px) {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 64px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 109px;
+        font-size: 260px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 365px;
+        height: 365px;
+        background-color: black;
+        position: absolute;
+        top: 227px;
+        left: 280px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 300px;
+        left: 700px;
+        width: 500px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 24px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+    
+}
+
+@media (max-width: 1300px) {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 64px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 149px;
+        font-size: 240px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 365px;
+        height: 365px;
+        background-color: black;
+        position: absolute;
+        top: 207px;
+        left: 240px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 260px;
+        left: 640px;
+        width: 500px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 24px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 1025px) {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 48px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 119px;
+        font-size: 200px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 305px;
+        height: 305px;
+        background-color: black;
+        position: absolute;
+        top: 157px;
+        left: 200px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 220px;
+        left: 540px;
+        width:400px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 24px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 16px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 718px) and (max-height: 518px)  {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 39px;
+        font-size: 140px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 255px;
+        height: 255px;
+        background-color: black;
+        position: absolute;
+        top: 117px;
+        left: 100px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 160px;
+        left: 380px;
+        width:270px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 20px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 14px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 821px) and (min-height: 519px)  {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 39px;
+        font-size: 140px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 255px;
+        height: 255px;
+        background-color: black;
+        position: absolute;
+        top: 117px;
+        left: 100px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 160px;
+        left: 380px;
+        width:270px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 20px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 14px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+}
+
+@media (max-width: 600px) and (min-height: 519px) {
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 19px;
+        font-size: 80px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder {
+        width: 255px;
+        height: 255px;
+        background-color: black;
+        position: absolute;
+        top: 67px;
+        left: 50%; /* Adjust the left position to 50% */
+        transform: translateX(-50%); /* Add this line to center horizontally */
+        background-size: cover;
+        background-position: center;
+      }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 340px;
+        left: 50%; /* Adjust the left position to 50% */
+        transform: translateX(-50%); /* Add this line to center horizontally */
+        width:270px;
+        text-align: center;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size: 20px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 10px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 14px;
+        font-family: 'Source Sans Pro';
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1921px){
+    .selected-name{
+        color: rgb(23, 23, 23);
+        font-size: 84px;
+        font-family: 'Source Sans Pro Bold';
+        text-transform: uppercase;
+    
+    }
+    
+    .section2-trener-container{
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .selected-background-paragraph{
+        color: white;
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 149px;
+        font-size: 390px;
+        -webkit-text-stroke: 2px rgb(175,175,175);; /* Add a black stroke with a width of 1px */
+    }
+    
+    .selected-image-holder{
+        width: 665px;
+        height: 665px;
+        background-color: black;
+        position: absolute;
+        top: 287px;
+        left: 410px;
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .selected-postavitev{
+        position: absolute;
+        top: 420px;
+        left: 1120px;
+        width: 700px;
+    }
+    
+    .selected-poklic{
+        color: rgb(23, 23, 23);
+        font-size:40px;
+        font-family: 'Source Sans Pro Bold';
+        margin-top: 30px;
+        text-transform: uppercase;
+    
+    }
+    
+    .selected-opis{
+        color: rgb(23, 23, 23);
+        font-size: 32px;
+        font-family: 'Source Sans Pro';
+        margin-top: 30px;
+        text-align: justify;
+    }
+}

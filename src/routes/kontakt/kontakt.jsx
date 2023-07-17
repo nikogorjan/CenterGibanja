@@ -119,7 +119,6 @@ const Kontakt = () => {
             </div>
             <div className="kontakt-telefon">
               <div className="telefon-white-slider">
-                <p className="telefon-white">Poklici ali poslji sporocilo</p>
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleEmailClick}>
@@ -134,7 +133,6 @@ const Kontakt = () => {
             </div>
             <div className="kontakt-naslov">
               <div className="telefon-white-slider">
-                <p className="telefon-white">Najdes nas na naslovu</p>
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleLocationClick}>
