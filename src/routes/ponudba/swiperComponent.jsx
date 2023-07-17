@@ -222,7 +222,7 @@ const SwiperComponent = () => {
       );
     }
     return null;
-  };
+  }; 
 
   return (
     <div className="swiper-main">

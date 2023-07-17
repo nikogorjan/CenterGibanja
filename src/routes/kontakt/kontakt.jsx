@@ -43,7 +43,7 @@ const Kontakt = () => {
       "https://www.google.com/maps/place/Plese+2,+9000+Murska+Sobota/@46.6582915,16.1743139,17z/data=!3m1!4b1!4m6!3m5!1s0x476f3edd3d038ae1:0xf6198a935e5a661!8m2!3d46.6582915!4d16.1765026!16s%2Fg%2F11crx0fx8d"
     ); // Replace with the desired location or address
   };
-
+ 
   useEffect(() => {
     const handleResize = () => {
       const kontaktMain = document.querySelector(".kontakt-main");
@@ -119,7 +119,6 @@ const Kontakt = () => {
             </div>
             <div className="kontakt-telefon">
               <div className="telefon-white-slider">
-                <p className="telefon-white">Poklici ali poslji sporocilo</p>
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleEmailClick}>
@@ -134,7 +133,6 @@ const Kontakt = () => {
             </div>
             <div className="kontakt-naslov">
               <div className="telefon-white-slider">
-                <p className="telefon-white">Najdes nas na naslovu</p>
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleLocationClick}>

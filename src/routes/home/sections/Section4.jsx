@@ -7,12 +7,23 @@ import Slika from "../sections/Slika2.jpg";
 import Insta1 from "../sections/insta1.jpg";
 import Insta2 from "../sections/insta2.jpg";
 import Insta3 from "../sections/insta3.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Section4 = () => {
   const [activeRotate, setActiveRotate] = useState(null);
+  const navigate = useNavigate();
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
   const handleRotateHover = (index) => {
     setActiveRotate(index);
+  };
+
+  const handlePrijavaClick = () => {
+    setIsOverlayVisible(true);
+
+    setTimeout(() => {
+      navigate("/prijava");
+    }, 1000);
   };
 
   return (
@@ -76,11 +87,12 @@ const Section4 = () => {
             <p className="besedilo4" id="besedilo44">
             Brez skrbi! V našem centru se ne prične z vadbo takoj. Prednost dajemo temu, da najprej spoznamo posameznike in jih temeljito diagnosticiramo. Naš pristop se začne s sproščenim klepetom ob kavi, kjer skupaj postavimo cilje, nato pa se lotimo vadbe. Vabimo te, da se prijaviš na brezplačen posvet in postaneš del naše skupnosti.
             </p>
-            <button className="section4-button">Prijava na vadbe</button>
+            <button className="section4-button" onClick={handlePrijavaClick}>Prijava na vadbe</button>
           </div>
         </div>
         
       </div>
+      {isOverlayVisible && <div className="overlay drop"></div>}
     </div>
   );
 };
