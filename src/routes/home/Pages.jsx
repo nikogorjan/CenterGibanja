@@ -25,16 +25,7 @@ const Pages = () => {
     }, 2000); // Adjust the duration as needed
   }, []);
 
-  useEffect(() => {
-    // Make the API call to retrieve the text from the server
-    Axios.get("http://localhost:5174/text/1")
-      .then((response) => {
-        setText(response.data.text);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+  
 
   const handleAnimationFinish = () => {
     setTimeout(() => {

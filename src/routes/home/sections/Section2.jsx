@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef,useContext } from "react";
 import "../sections/Section2.css";
 import Axios from "axios";
-import Slika1 from "../sections/Section_2_01.jpg";
-import Slika2 from "../sections/Section_2_02.jpg";
+import Slika1 from "../sections/projekt1.png";
+import Slika2 from "../sections/projekt2.png";
 import Section2Slides from "./Section2Slides";
 import SwiperCore, { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";

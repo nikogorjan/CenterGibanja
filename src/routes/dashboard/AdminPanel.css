@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.admin-panel {
+    display: flex;
+    height: 130vh;
+    background-color: rgb(23, 23, 23);
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 23, 23);
+
+  }
+  
+  .sidebar a {
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .sidebar a.active {
+    font-weight: bold;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  .adminpanelbutton{
+    font-size: 20px;
+    font-family: 'Source Sans Pro Bold';
+
+  }
+
+ 

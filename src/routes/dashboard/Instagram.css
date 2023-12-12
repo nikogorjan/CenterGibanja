@@ -1,0 +1,14 @@
+.ig-main{
+    display: flex;
+}
+
+.img-holder-ig{
+    width: 200px;
+    height: 200px;
+cursor: pointer;    margin-left: 20px;
+}
+
+.images-wrapper{
+    display: flex;
+    flex-direction: row;
+}

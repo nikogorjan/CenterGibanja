@@ -239,7 +239,7 @@ const SwiperComponent = () => {
       <div className="swiper-container" ref={swiperRef}>
         <div className="carousel-button-left-new" onClick={() => swiperRef.current.slidePrev()}>
           <div className="line1" />
-          <div className="line2" />
+          <div className="line2" /> 
         </div>
         <div className="carousel-button-right-new" onClick={() => swiperRef.current.slideNext()}>
           <div className="line3" />

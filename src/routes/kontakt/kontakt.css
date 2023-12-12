@@ -13,6 +13,7 @@
 .kontakt-main{
     background-color: rgb(23, 23, 23);
     height: 100vh;
+    overflow: hidden;
 }
 
 .scrollable {
@@ -106,21 +107,29 @@
 .kontakt-image1{
   margin-top: 100px;
   margin-left: 300px;
-  width: 50%;
+  width: 100%;
 }
 
-@media (max-width: 1071px) {
+@media (max-width: 1371px) {
   .kontakt-image1{
     margin-left: 100px;
   }
 }
 
 @media (max-width: 896px) {
+  .kontakt-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Set the height to the full viewport height */
+  }
+
   .kontakt-grid{   
     flex-direction: column;
-    position: absolute;
+    position: relative;
     left: 0%;
-    top: 20%;
+    top: 0%;
     text-align: center;
     justify-content: center;
     padding: 20px;
@@ -211,10 +220,10 @@
       margin-top: 0px;
       margin-left: 550px;
       width: 70%;
+
     }
   
     .kontakt-podatki{
-      margin-top: 120px;
       margin-left: 200px;
     }
   

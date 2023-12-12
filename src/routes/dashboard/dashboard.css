@@ -268,3 +268,28 @@ label{
   font-family: 'Source Sans Pro';
   font-weight: 400;
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 1600px) {
+  .popup-window {
+    position: fixed;
+    top: 50%;
+    width: 700px;
+    height: 100vh;
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .image-container {
+    background-size: cover;
+    background-position: center;
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}

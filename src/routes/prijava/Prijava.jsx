@@ -9,13 +9,13 @@ const Prijava = () => {
     const [phoneNum, setPhoneNum] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
-
     const [blocks, setBlocks] = useState([]);
     const [selected, setSelected] = useState(""); // Added state for selected button
 
 
     const handleFullNameChange = (e) => {
         setFullName(e.target.value);
+        console.log(fullName)
     };
 
     const handlePhoneNumChange = (e) => {
@@ -54,14 +54,16 @@ const Prijava = () => {
         console.log("sending email");
         // Here, you can perform any additional actions with the `fullName` value, such as sending it to the backend server.
         const templateParams = {
-            user_name: fullName,
+            from_name: fullName,
             user_phone: phoneNum,
             user_email: email,
-            user_vadba: selected,
+            From_vadba: selected,
             message: message
           };
 
-          emailjs.send('service_ntc93k8', 'template_hsu34ci', templateParams, 'qjctlMy68iSCBqueO')
+          console.log(templateParams);
+
+          emailjs.send('service_vipgy5r', 'template_eiztj6s', templateParams, 'WWtbT4eiU6bn3Y5go')
           .then((response) => {
             console.log('Email sent successfully:', response.text);
             window.alert('Email sent successfully:');
@@ -89,7 +91,7 @@ const Prijava = () => {
             <Navbar />
             <div className="prijava-postavitev">
                 <div className="prijava-naslov">PRIJAVA NA VADBO</div>
-                <div className="prijava-sporocilo">Izpolni obrazec in v najkrajsem moznem casu te bomo kontaktirali za prvi trening oziroma posvet.</div>
+                <div className="prijava-sporocilo">Izpolni obrazec in v najkrajšem možnem času te bomo kontaktirali za prvi trening oziroma posvet.</div>
                 <div className="prijava-form">
                     <form onSubmit={handleSubmit}>
                         <label htmlFor="fullName">Ime in Priimek</label>

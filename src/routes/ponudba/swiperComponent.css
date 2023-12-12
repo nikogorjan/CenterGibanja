@@ -56,7 +56,7 @@
 
 .swiper-container {
     width: 1140px;
-    height: 734px;
+    height: 640px;
     margin: 0 auto;
     transform: translate(-50%, -50%);
     background-color: rgb(23, 23, 23);
@@ -68,7 +68,7 @@
   .swiper-slide {
     margin-top: 80px;
     width: 100%;
-    height: 534px;
+    /*height: 534px;*/
     display: flex;
     flex-direction: row;
     font-size: 24px;
@@ -202,7 +202,7 @@
   }
 
   .ponudba-image{
-    height: 534px;
+    height: 100%;
     width: 540px;
     background-color: wheat;
   }
@@ -249,7 +249,8 @@
 
   .buttons-container{
     margin-top: 20px;
-  
+    position: relative;
+    height: 100%;
   }
 
   .custom-button{
@@ -275,8 +276,8 @@
 
   .additional-values{
     position: absolute;
-  right: 80px;
-  top: 420px;
+  right: 0%;
+  bottom: 10%;
   }
 
   @media (max-width: 1300px) {
@@ -294,7 +295,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 380px;
+      /*height: 380px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -309,7 +310,7 @@
     }
 
     .ponudba-image{
-      height: 380px;
+      height: 100%;
       width: 540px;
       background-color: wheat;
     }
@@ -360,8 +361,8 @@
   
     .additional-values{
       position: absolute;
-    right: 50px;
-    top: 300px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{
@@ -430,7 +431,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 280px;
+      /*height: 280px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -445,7 +446,7 @@
     }
 
     .ponudba-image{
-      height: 280px;
+      height: 100%;
       width: 540px;
       background-color: wheat;
     }
@@ -496,8 +497,8 @@
   
     .additional-values{
       position: absolute;
-    right: 30px;
-    top: 220px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{
@@ -568,7 +569,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 220px;
+      /*height: 220px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -583,7 +584,7 @@
     }
 
     .ponudba-image{
-      height: 220px;
+      height: 70%;
       width: 540px;
       background-color: wheat;
     }
@@ -634,8 +635,8 @@
   
     .additional-values{
       position: absolute;
-    right: 20px;
-    top: 175px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{
@@ -720,7 +721,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 650px;
+      /*height: 650px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -735,7 +736,7 @@
     }
 
     .ponudba-image{
-      height: 540px;
+      height: 50%;
       width: 540px;
       background-color: wheat;
     }
@@ -786,8 +787,8 @@
   
     .additional-values{
       position: absolute;
-    right: 40px;
-    top: 580px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{
@@ -876,7 +877,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 571px;
+      /*height: 571px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -891,7 +892,7 @@
     }
 
     .ponudba-image{
-      height: 540px;
+      height: 50%;
       width: 265px;
       background-color: wheat;
     }
@@ -942,8 +943,8 @@
   
     .additional-values{
       position: absolute;
-    right: 10px;
-    top: 520px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{
@@ -1038,7 +1039,7 @@
     .swiper-slide {
       margin-top: 80px;
       width: 100%;
-      height: 571px;
+      /*height: 571px;*/
       display: flex;
       flex-direction: row;
       font-size: 24px;
@@ -1053,7 +1054,7 @@
     }
 
     .ponudba-image{
-      height: 540px;
+      height: 50%;
       width: 240px;
       background-color: wheat;
     }
@@ -1104,8 +1105,8 @@
   
     .additional-values{
       position: absolute;
-    right: 10px;
-    top: 520px;
+      right: 0%;
+  bottom: 10%;
     }
 
     .buttons-postavitev{

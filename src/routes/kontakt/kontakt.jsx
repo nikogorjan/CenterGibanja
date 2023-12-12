@@ -75,11 +75,16 @@ const Kontakt = () => {
           </div>
 
           <div className="kontakt-image">
-            <img
-              src={Slika}
-              alt="Image description"
-              className="kontakt-image1"
-            />
+          <iframe
+        title="Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.3539417383767!2d16.146956515888217!3d46.655434979135335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740dd2ec9e442e5%3A0x758cda01ab07d0e2!2sPlese%202%2C%209000%20Murska%20Sobota%2C%20Slovenia!5e0!3m2!1sen!2sus!4v1660413883485!5m2!1sen!2sus"
+        width="100%"
+        height="250"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        className="kontakt-image1"
+      ></iframe>
           </div>
           <div className="kontakt-podatki">
             <div className="kontakt-telefon">
@@ -90,7 +95,7 @@ const Kontakt = () => {
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleMobileNumberClick}>
-                  +386 31 643 234
+                  +386 41 752 460
                 </p>
               </div>
             </div>
@@ -127,7 +132,7 @@ const Kontakt = () => {
               </div>
               <div className="telefon-gray-slider">
                 <p className="telefon-gray" onClick={handleMobileNumberClick}>
-                  +386 31 643 234
+                  +386 41 752 460
                 </p>
               </div>
             </div>
@@ -147,11 +152,16 @@ const Kontakt = () => {
             </div>
           </div>
           <div className="kontakt-image">
-            <img
-              src={Slika}
-              alt="Image description"
-              className="kontakt-image1"
-            />
+            <iframe
+        title="Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.3539417383767!2d16.146956515888217!3d46.655434979135335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4740dd2ec9e442e5%3A0x758cda01ab07d0e2!2sPlese%202%2C%209000%20Murska%20Sobota%2C%20Slovenia!5e0!3m2!1sen!2sus!4v1660413883485!5m2!1sen!2sus"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        className="kontakt-image1"
+      ></iframe>
           </div>
         </div>
       )}

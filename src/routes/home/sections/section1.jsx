@@ -9,16 +9,7 @@ const Section1 = () => {
   const navigate = useNavigate();
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
-  useEffect(() => {
-    // Make the API call to retrieve the text from the server
-    Axios.get("http://localhost:5174/text/1")
-      .then((response) => {
-        setText(response.data.text);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
+ 
 
   const handleKontaktClick = () => {
     setIsOverlayVisible(true);
