@@ -145,9 +145,9 @@ const Dashboard = ({ component: Component, isAuthenticated, ...rest }) => {
 
 
   return (
-    <div className="dashboard-main">
+    <div className={`dashboard-main ${isPopupOpen ? "no-scroll" : ""}`}>
       <div>
-        <div className="header-container">
+        <div className="header-container"> 
         <p className="ponudba-header">PONUDBA</p>
         <button className="add-button" onClick={handleAddButtonClick}>
               <p>DODAJ</p>

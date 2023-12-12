@@ -50,7 +50,7 @@ const Section5 = () => {
 
         
         <div className="sekcija4-socials">
-        <a className="social-link" href="https://www.facebook.com/Mocgibanja"
+        <a className="social-link" href="https://www.facebook.com/CentergibanjaMS"
                 target="_blank"
                 rel="noopener noreferrer">
           <img

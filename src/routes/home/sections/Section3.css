@@ -57,7 +57,6 @@
     height: 200px;
     transform-style: preserve-3d;
     animation: animate 90s linear infinite;
-    cursor: pointer;
 }
 
 
@@ -91,6 +90,8 @@
     width: 100%;
     height: auto;
     object-fit: cover;
+    image-rendering: optimizeQuality;
+
 }
 
 .postavitev-animacija{

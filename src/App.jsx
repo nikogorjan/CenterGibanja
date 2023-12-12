@@ -16,6 +16,9 @@ import Ponudba from "./routes/ponudba/ponudba";
 import Kontakt from "./routes/kontakt/kontakt";
 import SwiperComponent from "./routes/ponudba/swiperComponent";
 import Prijava from "./routes/prijava/Prijava";
+import AdminPanel from "./routes/dashboard/AdminPanel";
+import TimesTable from "./routes/urnik/Urnik";
+import CreateEventWithNoOverlap from "./routes/urnik/Urnik";
 
 function App() {
   return (
@@ -25,9 +28,9 @@ function App() {
       <Route path="/kontakt" element={<Kontakt />} />
       <Route path="/ponudba" element={<SwiperComponent />} />
       <Route path="/prijava" element={<Prijava />} />
-
+      <Route path="/urnik" element={<TimesTable />} />
       <Route element={<PrivateRoutes />}>
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<AdminPanel />} />
       </Route>
     </Routes>
   );

@@ -60,6 +60,28 @@ const Navbar = () => {
     }
   };
 
+  const handleUrnikClick = () => {
+    if (window.location.pathname !== "/urnik") {
+      const kontaktMenuItems = document.querySelectorAll(".menu-item.animate");
+      kontaktMenuItems.forEach((menuItem) =>
+        menuItem.classList.add("move-down")
+      );
+      const lokacijaItem = document.querySelector(".kontakt-lokacija");
+      lokacijaItem.classList.add("out");
+
+      setTimeout(() => {
+        const overlay = document.querySelector(".overlay");
+        overlay.classList.add("drop");
+      }, 200);
+
+      setTimeout(() => {
+        navigate("/urnik");
+      }, 1000);
+    } else {
+      handleMenuToggle();
+    }
+  };
+
   const handleDomovClick = () => {
     navigate("/");
   };
@@ -146,7 +168,7 @@ const Navbar = () => {
       </div>
       <div className={`menu ${isMenuOpen ? "open" : ""}`}>
         <div className="menuNavbar">
-          <a className="social-link" href="https://www.facebook.com/Mocgibanja"
+          <a className="social-link" href="https://www.facebook.com/CentergibanjaMS"
                 target="_blank"
                 rel="noopener noreferrer">
           <img
@@ -196,7 +218,7 @@ const Navbar = () => {
             </p>
           </div>
           <div className="menu-item-slider">
-            <p className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
+            <p onClick={handleUrnikClick} className={`menu-item ${isMenuOpen ? "animate" : ""}`}>
               URNIK VADB
             </p>
           </div>
@@ -224,7 +246,7 @@ const Navbar = () => {
               id="click-item"
               onClick={handleMobileNumberClick}
             >
-              +386 31 643 234
+              +386 41 752 460
             </p>
           </div>
           <div className="lokacija">

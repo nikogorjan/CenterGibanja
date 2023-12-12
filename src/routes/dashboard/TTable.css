@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../../assets/fonts/SourceSansPro-Regular.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: url('../../../assets/fonts/SourceSansPro-Bold.ttf');
+    /* Add more src lines for different font file formats if needed */
+  }
+
+.event-table {
+    border-collapse: collapse;
+    width: 900px; /* Adjust the width of the table as needed */
+    margin-bottom: 20px;
+    font-family: 'Source Sans Pro';
+  }
+  
+  
+
+  .urnik-th{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 100px;
+    text-align: center;
+  }
+
+  .urnik-th-long{
+    border: 1px solid #ccc;
+    padding: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .event-table th {
+  }
+  
+  .event-table input {
+    width: 100px;
+    padding: 4px;
+  }
+  
+  .event-table button {
+    width: 80px;
+    padding: 4px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .event-table button:hover {
+    background-color: #c0392b;
+  }
+
+  .urnik-button{
+    background-color: rgb(20, 131, 235); 
+    margin-top: 10px;
+  }
+
+  td.urnik-th-long input[type='text'] {
+    width: 300px;
+  }

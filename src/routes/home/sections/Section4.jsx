@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../sections/Section4.css";
-import Axios from "axios";
+import axios from "axios";
 import Facebook from "../../../assets/images/images/Facebook.svg";
 import Instagram from "../../../assets/images/images/Instagram.svg";
 import Slika from "../sections/Slika2.jpg";
@@ -8,11 +8,45 @@ import Insta1 from "../sections/insta1.jpg";
 import Insta2 from "../sections/insta2.jpg";
 import Insta3 from "../sections/insta3.jpg";
 import { useNavigate } from "react-router-dom";
+import { Buffer } from 'buffer';
 
 const Section4 = () => {
   const [activeRotate, setActiveRotate] = useState(null);
   const navigate = useNavigate();
   const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+  const [instaData, setInstaData] = useState([]);
+  const [firstInstaData, setFirstInstaData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+        try {
+            const response = await axios.get('https://centergibanja.si/api/getInsta');
+            setInstaData(response.data);
+            console.log(instaData)
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    fetchData();
+}, []);
+
+useEffect(() => {
+  console.log(instaData)
+
+}, [instaData]);
+
+useEffect(() => {
+  if (instaData.length > 0) {
+    setFirstInstaData(instaData[0]);
+  }
+}, [instaData]);
+
+const getSlideBackground = (slika) => {
+  if (!slika) return '';
+  const base64Image = `data:image/jpeg;base64,${Buffer.from(slika).toString('base64')}`;
+  return base64Image;
+};
 
   const handleRotateHover = (index) => {
     setActiveRotate(index);
@@ -40,7 +74,9 @@ const Section4 = () => {
                 className={`insta-slika1 rotate ${activeRotate === 0 ? "active" : "inactive"
                   }`}
                 style={{
-                  backgroundImage: `url(${Insta1})`,
+                  backgroundImage: firstInstaData
+                  ? `url(${getSlideBackground(instaData[0].slika)})`
+                  : `url(${Insta1})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -56,7 +92,9 @@ const Section4 = () => {
                   className={`insta-slika2 rotate ${activeRotate === 1 ? "active" : "inactive"
                     }`}
                   style={{
-                    backgroundImage: `url(${Insta2})`,
+                    backgroundImage: firstInstaData
+                  ? `url(${getSlideBackground(instaData[1].slika)})`
+                  : `url(${Insta1})`,
                     backgroundSize: "cover", // Adjust the background size as needed
                     backgroundPosition: "center", // Adjust the background position as needed
                   }}
@@ -70,7 +108,9 @@ const Section4 = () => {
                   className={`insta-slika3 rotate ${activeRotate === 2 ? "active" : "inactive"
                     }`}
                   style={{
-                    backgroundImage: `url(${Insta3})`,
+                    backgroundImage: firstInstaData
+                  ? `url(${getSlideBackground(instaData[2].slika)})`
+                  : `url(${Insta1})`,
                     backgroundSize: "cover", // Adjust the background size as needed
                     backgroundPosition: "center", // Adjust the background position as needed
                   }}
